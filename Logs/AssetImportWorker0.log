@@ -1,0 +1,748 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19044.1586; Version 2009; 64bit' Language: 'en' Physical Memory: 16338 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+E:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62757
+Successfully changed project path to: E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project
+E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 63.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.18f1 (a7d1c678663c)
+[Subsystems] Discovering subsystems at path E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 with Max-Q Design (ID=0x1c60)
+    Vendor:   
+    VRAM:     6052 MB
+    Driver:   30.0.15.1179
+Initialize mono
+Mono path[0] = 'E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56820
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001679 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 60.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.162 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1162ms)
+		BeginReloadAssembly (79ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (510ms)
+			LoadAssemblies (78ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (212ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (61ms)
+				BeforeProcessingInitializeOnLoad (16ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004918 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 70.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.701 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1702ms)
+		BeginReloadAssembly (200ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1342ms)
+			LoadAssemblies (166ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (524ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (429ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (70ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (246ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2805 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 145.1 MB.
+System memory in use after: 145.3 MB.
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3257.
+Total: 5.597800 ms (FindLiveObjects: 0.442600 ms CreateObjectMapping: 0.187300 ms MarkObjects: 4.834500 ms  DeleteObjects: 0.131600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Hotel Cafe/Models/Materials/white color wall.mat
+  artifactKey: Guid(cc3a992bb28b36440a006ba28ca49961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Models/Materials/white color wall.mat using Guid(cc3a992bb28b36440a006ba28ca49961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b718dfc9ea0d01ea1e4982bb73fd4f95') in 1.336542 seconds 
+  Import took 1.344690 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.808665 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Clock.prefab
+  artifactKey: Guid(11429873c8edbbf479f814cd4b59d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Clock.prefab using Guid(11429873c8edbbf479f814cd4b59d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53baeec24c545bfc8b480a611a699469') in 0.187779 seconds 
+  Import took 0.226676 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Knife.prefab
+  artifactKey: Guid(d39148b8fd773a648b736620230d9f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Knife.prefab using Guid(d39148b8fd773a648b736620230d9f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f17098f3faa11f6505978e7bc2cc58') in 0.011580 seconds 
+  Import took 0.017001 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 3.prefab
+  artifactKey: Guid(32c0390c620d9ea49ae0b7e4c12ea2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 3.prefab using Guid(32c0390c620d9ea49ae0b7e4c12ea2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c55a70453cb5512eec9cebe3acf6a94') in 0.015510 seconds 
+  Import took 0.021484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 5.prefab
+  artifactKey: Guid(499b7c4ea869f35498fc15883ffd6419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 5.prefab using Guid(499b7c4ea869f35498fc15883ffd6419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8eff02277f59614ba6e5c4b476b661e') in 0.130997 seconds 
+  Import took 0.152947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001427 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Glass 1.prefab
+  artifactKey: Guid(0b7c01f426cf04047a921a34e2a4c964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Glass 1.prefab using Guid(0b7c01f426cf04047a921a34e2a4c964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1baa7c489b1cf5890d32ab0b19a8ec1') in 0.076659 seconds 
+  Import took 0.093551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Orange juice.prefab
+  artifactKey: Guid(e218bb7158037d244b78868bca262f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Orange juice.prefab using Guid(e218bb7158037d244b78868bca262f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdb901926018c813568e388addc1e74') in 0.047630 seconds 
+  Import took 0.079423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Oil botlle.prefab
+  artifactKey: Guid(7dcfc1853031c6d478e7f8511cc0c379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Oil botlle.prefab using Guid(7dcfc1853031c6d478e7f8511cc0c379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2e7f4f7fe1afb256e5edf4074f65ba') in 0.044591 seconds 
+  Import took 0.055487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Glass 2.prefab
+  artifactKey: Guid(328bb954987bb2f4485939d7a437bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Glass 2.prefab using Guid(328bb954987bb2f4485939d7a437bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214147dd0faf7afc902576cfaf6d20f2') in 0.193495 seconds 
+  Import took 0.236231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wall 4.prefab
+  artifactKey: Guid(0cdbd3534a527ed4e9f1493ead911c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wall 4.prefab using Guid(0cdbd3534a527ed4e9f1493ead911c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59abb4ddc7a5040500e1382a37a782e') in 0.170844 seconds 
+  Import took 0.186353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Shelf.prefab
+  artifactKey: Guid(c11ba1536b428684fb0335e6b6e2e268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Shelf.prefab using Guid(c11ba1536b428684fb0335e6b6e2e268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba250c29383bf8b3fec9992386d496a9') in 0.164481 seconds 
+  Import took 0.177010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000366 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wall 5.prefab
+  artifactKey: Guid(16810b5a473e2774696a514c78e7ba74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wall 5.prefab using Guid(16810b5a473e2774696a514c78e7ba74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07efeb0b4e5fbb8fcfddb7a979b313e7') in 0.169962 seconds 
+  Import took 0.202354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020445 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Bar furniture.prefab
+  artifactKey: Guid(d139758745076b3459f206f7d9c8ae59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Bar furniture.prefab using Guid(d139758745076b3459f206f7d9c8ae59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b882b7ba137fac6a3866393f739896') in 0.041098 seconds 
+  Import took 0.103826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Ceiling.prefab
+  artifactKey: Guid(dedc01f8fbe87d14191607f3d0f19561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Ceiling.prefab using Guid(dedc01f8fbe87d14191607f3d0f19561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1124a4b2ae8f9ee7d1b151e4246bd692') in 0.045546 seconds 
+  Import took 0.111907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000522 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wall 2.prefab
+  artifactKey: Guid(643e5aa89313c1d419c781325fd4e973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wall 2.prefab using Guid(643e5aa89313c1d419c781325fd4e973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61af788cc997977de5a3ba6a3052202') in 0.157205 seconds 
+  Import took 0.208805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.039553 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Poster 3.prefab
+  artifactKey: Guid(c8aecebfdf9785a4da1c8479eb1725d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Poster 3.prefab using Guid(c8aecebfdf9785a4da1c8479eb1725d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d90a590d99705154157a780c6b37cd') in 0.131100 seconds 
+  Import took 0.239239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Fresh cola.prefab
+  artifactKey: Guid(848e8d782445edf4480acb6de7ca1e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Fresh cola.prefab using Guid(848e8d782445edf4480acb6de7ca1e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bffee25b15b8f0e76d59eecb198278') in 0.037927 seconds 
+  Import took 0.087852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Liquor bottle 2.prefab
+  artifactKey: Guid(c1946cebe89be9f4abea5cadf53689b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Liquor bottle 2.prefab using Guid(c1946cebe89be9f4abea5cadf53689b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c23dfa9176496fdcf0041977996dcf2') in 0.106035 seconds 
+  Import took 0.135464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wine bottle 2.prefab
+  artifactKey: Guid(0655a29514b7d7a41bd51db4293ba76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wine bottle 2.prefab using Guid(0655a29514b7d7a41bd51db4293ba76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59b788dc0e2a5989bea73c0cd4cb99b') in 0.021448 seconds 
+  Import took 0.031109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Orange.prefab
+  artifactKey: Guid(26862821be3979147bc41165fd1550f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Orange.prefab using Guid(26862821be3979147bc41165fd1550f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611d2433797fc486cc0ce4d3d54ae21a') in 0.165461 seconds 
+  Import took 0.249990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015968 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 2.prefab
+  artifactKey: Guid(d7028f0e62bde3a469d85a2a7b4c4410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 2.prefab using Guid(d7028f0e62bde3a469d85a2a7b4c4410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaae39a645c98dbd72b2526118f5248f') in 0.092941 seconds 
+  Import took 0.110368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Cabinet.prefab
+  artifactKey: Guid(1a7ab132e8d1c8e45a60cadb29ce5c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Cabinet.prefab using Guid(1a7ab132e8d1c8e45a60cadb29ce5c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f1843f003152dad39a47d14cf34b8c') in 0.096397 seconds 
+  Import took 0.127422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Security camera.prefab
+  artifactKey: Guid(0a33cf5c7dcb45042933fe6911bd8e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Security camera.prefab using Guid(0a33cf5c7dcb45042933fe6911bd8e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2480168e9f56ca55aa487fc557d06b35') in 0.023663 seconds 
+  Import took 0.036839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000297 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Chair 4.prefab
+  artifactKey: Guid(39881fc1b43a87349b5cc81de8d380bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Chair 4.prefab using Guid(39881fc1b43a87349b5cc81de8d380bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c18a6d14b6bf0acc12eb9117a2ef80') in 0.326866 seconds 
+  Import took 0.365606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000406 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Jar.prefab
+  artifactKey: Guid(69672d367b3ac9748a0930348d0e04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Jar.prefab using Guid(69672d367b3ac9748a0930348d0e04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0eaf61de3d9b8977bbe485d2ab53ea0') in 0.141872 seconds 
+  Import took 0.276888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.044637 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Poster 2.prefab
+  artifactKey: Guid(85b76e64cf284f640b598d5924905f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Poster 2.prefab using Guid(85b76e64cf284f640b598d5924905f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34ee9bd6de9353349cc09ace35e05be') in 0.059547 seconds 
+  Import took 0.069109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Omelette.prefab
+  artifactKey: Guid(8b71338ba1ad525449204a2097b096a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Omelette.prefab using Guid(8b71338ba1ad525449204a2097b096a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b31d99555e71df4454621c4f6a507c') in 0.168254 seconds 
+  Import took 0.219069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Napkin.prefab
+  artifactKey: Guid(e4a45265c6ba2fa4f9c363cb44f6a79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Napkin.prefab using Guid(e4a45265c6ba2fa4f9c363cb44f6a79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aea43495daf40aa8a5260b8afd76b1f') in 0.053166 seconds 
+  Import took 0.062809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Door 1.prefab
+  artifactKey: Guid(1e97a69cc4f57684daf9f89e9e14db02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Door 1.prefab using Guid(1e97a69cc4f57684daf9f89e9e14db02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33f70fcd772b297505ba41073678d37') in 0.024205 seconds 
+  Import took 0.059280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Table 1.prefab
+  artifactKey: Guid(f9bed01097973554388207360389d845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Table 1.prefab using Guid(f9bed01097973554388207360389d845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4febec60c4bc25adf523dc10394396ac') in 0.421217 seconds 
+  Import took 0.495735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001013 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Floor.prefab
+  artifactKey: Guid(ec5d2a2fba9c9244cbbe05c3e64a63c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Floor.prefab using Guid(ec5d2a2fba9c9244cbbe05c3e64a63c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e820a5546a15e7956dfc8ebac5ab0c') in 0.154279 seconds 
+  Import took 0.223322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Flowers.prefab
+  artifactKey: Guid(2217f2fd568a6514dbbba1c0d5e1a92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Flowers.prefab using Guid(2217f2fd568a6514dbbba1c0d5e1a92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be44d1a23cb6d89e54e2e1bce12d6c7') in 0.030028 seconds 
+  Import took 0.043720 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Milk.prefab
+  artifactKey: Guid(4caba20e04b87804fa54268079bce6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Milk.prefab using Guid(4caba20e04b87804fa54268079bce6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c10e063d0b2ac733fcee77c8d20b21') in 0.016084 seconds 
+  Import took 0.028822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Bar.prefab
+  artifactKey: Guid(23b85cd05cf458249a4e072e026819d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Bar.prefab using Guid(23b85cd05cf458249a4e072e026819d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ae6f17ed23e44378e98d740dd906a9') in 0.023449 seconds 
+  Import took 0.080628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Exit picture.prefab
+  artifactKey: Guid(6872a9c51ad840948b6c1d7e5924e907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Exit picture.prefab using Guid(6872a9c51ad840948b6c1d7e5924e907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b4a9c24f31c7ffda69ffb842d7033e') in 0.014725 seconds 
+  Import took 0.021538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wall 1.prefab
+  artifactKey: Guid(5d7a6210f65ec3142bb422c9a476ed83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wall 1.prefab using Guid(5d7a6210f65ec3142bb422c9a476ed83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1765b2b43b16f4d814b491a72b6e01') in 0.013409 seconds 
+  Import took 0.023007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Window.prefab
+  artifactKey: Guid(c2d47baa78309c74ea2b517e893aff06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Window.prefab using Guid(c2d47baa78309c74ea2b517e893aff06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f94ab93a342266567ab1f29b505bad') in 0.019212 seconds 
+  Import took 0.025626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Cup 1.prefab
+  artifactKey: Guid(bf703339e1682254dad02ae256e18b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Cup 1.prefab using Guid(bf703339e1682254dad02ae256e18b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3034b13cd24e0cda380479165474a99c') in 0.014452 seconds 
+  Import took 0.023007 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wall 6.prefab
+  artifactKey: Guid(4608abb5d80673b4485cfb3f8dd8b38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wall 6.prefab using Guid(4608abb5d80673b4485cfb3f8dd8b38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ea0268378bde1adf18718c0f1cc12d') in 0.015041 seconds 
+  Import took 0.023907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Tv.prefab
+  artifactKey: Guid(1371c84e878884946afa26a91fa65cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Tv.prefab using Guid(1371c84e878884946afa26a91fa65cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4ae90c82b034f110333efe53d531ba') in 0.016488 seconds 
+  Import took 0.024769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000537 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Ceiling lamp 2.prefab
+  artifactKey: Guid(36641f77209c6a24b8601a2ab8d7d6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Ceiling lamp 2.prefab using Guid(36641f77209c6a24b8601a2ab8d7d6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e83b109410ee20f46de88d67a03eabe') in 0.077297 seconds 
+  Import took 0.085655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016268 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wine bottle 1.prefab
+  artifactKey: Guid(20186672d8554704bb0109be1c07d410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wine bottle 1.prefab using Guid(20186672d8554704bb0109be1c07d410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70075d3d675c47931e483133af84286e') in 0.039574 seconds 
+  Import took 0.058627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007017 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Water bottle.prefab
+  artifactKey: Guid(273062a2cb34fee4aa7b9559b0c2244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Water bottle.prefab using Guid(273062a2cb34fee4aa7b9559b0c2244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091c9c31356fe8fd8fe32b41b43e0271') in 0.039487 seconds 
+  Import took 0.051177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Cash register.prefab
+  artifactKey: Guid(f802f120a03167d4aa178d35976f67a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Cash register.prefab using Guid(f802f120a03167d4aa178d35976f67a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a1d7a05b88922ddb8f8760c9c60771') in 0.039085 seconds 
+  Import took 0.066787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000523 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Spoon.prefab
+  artifactKey: Guid(e41728572e1dc4f48a0fb59accc35591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Spoon.prefab using Guid(e41728572e1dc4f48a0fb59accc35591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c5d14ab3abab26aee2e3f7dc3405ae') in 0.015054 seconds 
+  Import took 0.021431 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001114 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Cake 1.prefab
+  artifactKey: Guid(ee7d07bc3be455541abddec0f8b826ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Cake 1.prefab using Guid(ee7d07bc3be455541abddec0f8b826ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4778546b1ef1d3707abad34f533b8c0') in 0.054692 seconds 
+  Import took 0.077845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014131 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Chair 3.prefab
+  artifactKey: Guid(cc1f6d8e16b6dcd418bda6d863986ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Chair 3.prefab using Guid(cc1f6d8e16b6dcd418bda6d863986ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275eb9c527fa1ad68fdfaa17465c8904') in 0.054761 seconds 
+  Import took 0.086848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 4.prefab
+  artifactKey: Guid(a8a0cb90375f8e74aa250fc34bcaed30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 4.prefab using Guid(a8a0cb90375f8e74aa250fc34bcaed30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532a33eb6f6c71bc92743383d9b8e548') in 0.025240 seconds 
+  Import took 0.058324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020770 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Magazine.prefab
+  artifactKey: Guid(439decd1d1b70944f9ff2aa5779e20e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Magazine.prefab using Guid(439decd1d1b70944f9ff2aa5779e20e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6525c6a6efbd616615be664fa7edb1') in 0.025842 seconds 
+  Import took 0.035873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Pillow.prefab
+  artifactKey: Guid(03e47f8162f22574f9489df7e3b8a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Pillow.prefab using Guid(03e47f8162f22574f9489df7e3b8a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aedd7ba74e8f576edf43b8963ecffd17') in 0.071852 seconds 
+  Import took 0.087566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004792 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Fork.prefab
+  artifactKey: Guid(a52820221a71357499607e36db1ae92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Fork.prefab using Guid(a52820221a71357499607e36db1ae92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2842e56915dec73b991360473e42e991') in 0.046678 seconds 
+  Import took 0.060347 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010128 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Coffee machine.prefab
+  artifactKey: Guid(eae1ed2c7a636f349857f81e55b58444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Coffee machine.prefab using Guid(eae1ed2c7a636f349857f81e55b58444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22faf24f87127ecf217c4f2dc425bb8b') in 0.032995 seconds 
+  Import took 0.044018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Liquor bottle.prefab
+  artifactKey: Guid(5fd83aaeccbba324080fc955ae2e4d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Liquor bottle.prefab using Guid(5fd83aaeccbba324080fc955ae2e4d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42b04faeffb796c3a748db1339fb143') in 0.062405 seconds 
+  Import took 0.070423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000282 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Ceiling element.prefab
+  artifactKey: Guid(234226287dde2ed4a8189da3cb748f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Ceiling element.prefab using Guid(234226287dde2ed4a8189da3cb748f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e466c1fbd9a5a515abd44dec5604d59f') in 0.038080 seconds 
+  Import took 0.046374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014037 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wall 7.prefab
+  artifactKey: Guid(d6d0a5e83f9453c4e91f7d32a98f2eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wall 7.prefab using Guid(d6d0a5e83f9453c4e91f7d32a98f2eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c601b34ddf0310e14a0237a255a9a48') in 0.045961 seconds 
+  Import took 0.106168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Camera poster.prefab
+  artifactKey: Guid(7a10e0f3b2b090f4fa46153fe9abdd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Camera poster.prefab using Guid(7a10e0f3b2b090f4fa46153fe9abdd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb7ed4bbfaa193430db533a5fa4515f') in 0.036625 seconds 
+  Import took 0.057163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 6.prefab
+  artifactKey: Guid(0e3c311cb7db2c44eba345f82f546222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 6.prefab using Guid(0e3c311cb7db2c44eba345f82f546222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bde41ab15f07b481119dde2f9bc184') in 0.082904 seconds 
+  Import took 0.091913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Chair 1.prefab
+  artifactKey: Guid(3643e6af93f9ae441ba679ff83c0d3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Chair 1.prefab using Guid(3643e6af93f9ae441ba679ff83c0d3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760c09475e50dfe2dd3fa621780b0172') in 0.113869 seconds 
+  Import took 0.127223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Chair 2.prefab
+  artifactKey: Guid(6035c3f820162354ebc0cfd90504e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Chair 2.prefab using Guid(6035c3f820162354ebc0cfd90504e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423a14e7e1cc5d92592dc878c8ceedb7') in 0.034280 seconds 
+  Import took 0.059055 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Champagne.prefab
+  artifactKey: Guid(300d3d30823aa0041bb3fd7ed385a079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Champagne.prefab using Guid(300d3d30823aa0041bb3fd7ed385a079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8d39966f71c060ad13cb2533ad1647') in 0.022675 seconds 
+  Import took 0.037567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Wine.prefab
+  artifactKey: Guid(67bc3b88bacaf1340a6b0b60cc39b9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Wine.prefab using Guid(67bc3b88bacaf1340a6b0b60cc39b9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c23e21dd52836701749c1459df6f49d') in 0.037198 seconds 
+  Import took 0.073603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000521 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Sofa 1.prefab
+  artifactKey: Guid(922e4e8ee5cefb64eb6f812983c2328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Sofa 1.prefab using Guid(922e4e8ee5cefb64eb6f812983c2328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb13ae3cba13efdf98fee2adee1819b7') in 0.226389 seconds 
+  Import took 0.239385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010028 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Dish 2.prefab
+  artifactKey: Guid(b293adf9b613d474ca9c1a8cd8892978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Dish 2.prefab using Guid(b293adf9b613d474ca9c1a8cd8892978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00cff4d0ecc6a2222cc200a3a84fa99') in 0.059312 seconds 
+  Import took 0.093138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000441 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Table 2.prefab
+  artifactKey: Guid(fdc0b74adafdc9d4c86d844a5fa9320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Table 2.prefab using Guid(fdc0b74adafdc9d4c86d844a5fa9320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41751eee36cd5373f533fb28d3dae8a9') in 0.108357 seconds 
+  Import took 0.117769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Poster 1.prefab
+  artifactKey: Guid(60fe04ab12012f64cbc19c9df1f13245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Poster 1.prefab using Guid(60fe04ab12012f64cbc19c9df1f13245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df1610bcd2ff6887252a0de27267173') in 0.027269 seconds 
+  Import took 0.065059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.029301 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Shelf 2.prefab
+  artifactKey: Guid(26c75c3af8325b2458620b51d3b6d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Shelf 2.prefab using Guid(26c75c3af8325b2458620b51d3b6d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72eef1145c7177b94b1b47b7e7b39258') in 0.128732 seconds 
+  Import took 0.139468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Napkin holder.prefab
+  artifactKey: Guid(71be094fde590444e9e29dffc49c7328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Napkin holder.prefab using Guid(71be094fde590444e9e29dffc49c7328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a89a8923e6a1b3777ba65450856e306') in 0.100171 seconds 
+  Import took 0.124753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Dish 1.prefab
+  artifactKey: Guid(7d3a79360bc1b25418d95ee48f11e545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Dish 1.prefab using Guid(7d3a79360bc1b25418d95ee48f11e545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da835c355ab07f2b233a5e132d78840') in 0.018240 seconds 
+  Import took 0.090317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Pastries.prefab
+  artifactKey: Guid(49eb97d197067e04991ce49fd335557e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Pastries.prefab using Guid(49eb97d197067e04991ce49fd335557e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a8759eafaa848ac960c4918c685095') in 0.023757 seconds 
+  Import took 0.184423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.034484 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 1.prefab
+  artifactKey: Guid(4e8bd534bd2c6664cb50f5d7cc1353fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 1.prefab using Guid(4e8bd534bd2c6664cb50f5d7cc1353fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb650f5aa2ee7d00d300433f09895ebd') in 0.086418 seconds 
+  Import took 0.133855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000429 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Ceiling lamp.prefab
+  artifactKey: Guid(feb0569920880d943a39d8fd5140867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Ceiling lamp.prefab using Guid(feb0569920880d943a39d8fd5140867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87fa23a3e8cbba511fc3a54991ebf01') in 0.071092 seconds 
+  Import took 0.125158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Sofa 2.prefab
+  artifactKey: Guid(28e18e60ad2cc2e4e854701892f54e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Sofa 2.prefab using Guid(28e18e60ad2cc2e4e854701892f54e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917cfe2154d2e88feab06fbf49b64e05') in 0.031809 seconds 
+  Import took 0.093734 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027490 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Beer 1.prefab
+  artifactKey: Guid(c542aa8b170b714458a0e1360ced371b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Beer 1.prefab using Guid(c542aa8b170b714458a0e1360ced371b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395a722c5e06df60911759698f4c2dbd') in 0.055924 seconds 
+  Import took 0.186856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Crystal bell.prefab
+  artifactKey: Guid(65d3a7c9f9e812d4595ef3141c04c145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Crystal bell.prefab using Guid(65d3a7c9f9e812d4595ef3141c04c145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a30c1a03fdbc4e71b3b56dae2a7c9b') in 0.059779 seconds 
+  Import took 0.087073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000747 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Entrance Door.prefab
+  artifactKey: Guid(359fe5100f0353943a44d84fb481b068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Entrance Door.prefab using Guid(359fe5100f0353943a44d84fb481b068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579eec5eb2581b9b3adebc010be42738') in 0.124709 seconds 
+  Import took 0.137150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Orange juice machine.prefab
+  artifactKey: Guid(cb0871bc49d86854eb695185c590bdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Orange juice machine.prefab using Guid(cb0871bc49d86854eb695185c590bdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3dc01df02f44f2325580d4e5b4c575') in 0.384209 seconds 
+  Import took 0.401468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Hotel Cafe/Prefabs/Plant 7.prefab
+  artifactKey: Guid(957bca4a66c8a7b41b7e0e3b9cdaf9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Prefabs/Plant 7.prefab using Guid(957bca4a66c8a7b41b7e0e3b9cdaf9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4c30c022bc7847edfb7534ebbedd57') in 0.112981 seconds 
+  Import took 0.187258 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
