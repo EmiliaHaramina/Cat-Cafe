@@ -1,748 +1,1522 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19044.1586; Version 2009; 64bit' Language: 'en' Physical Memory: 16338 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+Built from '2021.2/staging' branch; Version is '2021.2.17f1 (efb8f635e7b1) revision 15710454'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'en' Physical Memory: 16335 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-E:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.2.17f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project
+C:/Users/Netmedia3/Desktop/Radovi/ZR_2021_ljeto_haramina_emilia/Cat Cafe/Cat-Cafe
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62757
-Successfully changed project path to: E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project
-E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project
-Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 63.06 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.18f1 (a7d1c678663c)
-[Subsystems] Discovering subsystems at path E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/FER/3. Godina/6. Semestar/ZAVRAD/Unity Project/New Unity Project/Assets
-GfxDevice: creating device client; threaded=0
+62391
+Successfully changed project path to: C:/Users/Netmedia3/Desktop/Radovi/ZR_2021_ljeto_haramina_emilia/Cat Cafe/Cat-Cafe
+C:/Users/Netmedia3/Desktop/Radovi/ZR_2021_ljeto_haramina_emilia/Cat Cafe/Cat-Cafe
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 75.10 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.84 ms.
+Initialize engine version: 2021.2.17f1 (efb8f635e7b1)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Netmedia3/Desktop/Radovi/ZR_2021_ljeto_haramina_emilia/Cat Cafe/Cat-Cafe/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 with Max-Q Design (ID=0x1c60)
-    Vendor:   
-    VRAM:     6052 MB
-    Driver:   30.0.15.1179
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   NVIDIA
+    VRAM:     2988 MB
+    Driver:   27.21.14.5671
 Initialize mono
-Mono path[0] = 'E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
-Mono path[1] = 'E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56820
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001679 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008211 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 60.86 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 64.67 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.162 seconds
+- Completed reload, in  0.687 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1162ms)
-		BeginReloadAssembly (79ms)
+	ReloadAssembly (687ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (510ms)
+		EndReloadAssembly (482ms)
 			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
+			SetupTypeCache (114ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (212ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (281ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (61ms)
-				BeforeProcessingInitializeOnLoad (16ms)
-				ProcessInitializeOnLoadAttributes (97ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
+				InitializePlatformSupportModulesInManaged (62ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004918 seconds.
+Registered in 0.009525 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 70.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 64.42 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Package Manager log level set to [2]
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
 Mono: successfully reloaded assembly
-- Completed reload, in  1.701 seconds
+- Completed reload, in  1.852 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1702ms)
-		BeginReloadAssembly (200ms)
+	ReloadAssembly (1853ms)
+		BeginReloadAssembly (233ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (122ms)
+		EndReloadAssembly (1498ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (1038ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (65ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (765ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3960 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (0.6 MB). Loaded Objects now: 4406.
+Memory consumption went from 182.4 MB to 181.7 MB.
+Total: 3.990300 ms (FindLiveObjects: 0.364000 ms CreateObjectMapping: 0.164100 ms MarkObjects: 3.251100 ms  DeleteObjects: 0.210200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1511433.160632 seconds.
+  path: Assets/XR
+  artifactKey: Guid(61f7c2d3a2a89c545b185754507b9f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR using Guid(61f7c2d3a2a89c545b185754507b9f98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbfb896ad4a7bf091042fcb36543f11') in 0.012187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/XR/XRGeneralSettings.asset
+  artifactKey: Guid(eacbfeb808bc688489e1e87a6938d1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR/XRGeneralSettings.asset using Guid(eacbfeb808bc688489e1e87a6938d1c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed43b95b9432b79b9dc17a5843d88a5') in 0.034037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.862609 seconds.
+  path: Assets/Hotel Cafe
+  artifactKey: Guid(43567bfc0b504604bade923cd88fa2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe using Guid(43567bfc0b504604bade923cd88fa2e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b300a6efa20677a9cb7554819e5cd618') in 0.007634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.042809 seconds.
+  path: Assets/Hotel Cafe/New Terrain.asset
+  artifactKey: Guid(4b1b9f6e204c7c14c92a16f1f473e187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/New Terrain.asset using Guid(4b1b9f6e204c7c14c92a16f1f473e187) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf58496f61f70c2337e2a67fe1b0c58') in 0.062592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.348588 seconds.
+  path: Assets/Hotel Cafe/Scene
+  artifactKey: Guid(3b8938f234f9d5a4da19056f84b6f575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Scene using Guid(3b8938f234f9d5a4da19056f84b6f575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094bb0f4b4f0c5a97869af2c18958333') in 0.007027 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.304 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1305ms)
+		BeginReloadAssembly (146ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1058ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (239ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (617ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (25ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (404ms)
+				ProcessInitializeOnLoadMethodAttributes (97ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.53 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4703.
+Memory consumption went from 180.5 MB to 179.9 MB.
+Total: 3.863200 ms (FindLiveObjects: 0.297900 ms CreateObjectMapping: 0.129800 ms MarkObjects: 3.290100 ms  DeleteObjects: 0.144600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 229.014790 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets
+  artifactKey: Guid(463c70642c0af1541a72055057e78b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets using Guid(463c70642c0af1541a72055057e78b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7388903ceb10d9cf39e5e99428cb0b6') in 0.014758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.076577 seconds.
+  path: Assets/XRI
+  artifactKey: Guid(0645bd72bbaa60144a8edd4a2343d5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XRI using Guid(0645bd72bbaa60144a8edd4a2343d5b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b132c2de370a53ce11af574706125d') in 0.008528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.856828 seconds.
+  path: Assets/Samples
+  artifactKey: Guid(e6bd4f580163c0f4ba25172a4d7e1882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples using Guid(e6bd4f580163c0f4ba25172a4d7e1882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bca053b2011fafd873d9cdc5e29927f') in 0.008180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.158159 seconds.
+  path: Assets/Samples/XR Interaction Toolkit
+  artifactKey: Guid(ad30be3e67192dd45a79ed8d6278da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit using Guid(ad30be3e67192dd45a79ed8d6278da26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2436840686f92d560085f0cad7a59a58') in 0.009362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.526254 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.0.1
+  artifactKey: Guid(18e2f7f9ee888b14b847058e32fc9d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.0.1 using Guid(18e2f7f9ee888b14b847058e32fc9d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f0b40ed6e483546cba2a83639a2ad41') in 0.010708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.586200 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Continuous Move.preset
+  artifactKey: Guid(91f9da00cfdac5d49955df2d2d820b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Continuous Move.preset using Guid(91f9da00cfdac5d49955df2d2d820b9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15712429ea4ba7940139439ff7bb4968') in 0.034176 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Left Controller.preset
+  artifactKey: Guid(ffd8268f7307a0c48a067dad4a8fe060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Left Controller.preset using Guid(ffd8268f7307a0c48a067dad4a8fe060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6607c7435054725d85f6f71a3028c779') in 0.016681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Snap Turn.preset
+  artifactKey: Guid(18697d253d848974aa7052cba872c9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Snap Turn.preset using Guid(18697d253d848974aa7052cba872c9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e6cd2086b0326eec0177e805a507147') in 0.014229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Right Controller.preset
+  artifactKey: Guid(1421ad86ff3787b4dae70fe9e699a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.0.1/Starter Assets/XRI Default Right Controller.preset using Guid(1421ad86ff3787b4dae70fe9e699a25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88c4b88170ef23b43b93bf917005c45') in 0.012564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 185.079476 seconds.
+  path: Assets/New Scene.unity
+  artifactKey: Guid(e9827b727aa352f4d84d89d40c5a1683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Scene.unity using Guid(e9827b727aa352f4d84d89d40c5a1683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53b2126618230fb600a1bd6817dd89d') in 0.008521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.900086 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.007853 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009599 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.501 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1502ms)
+		BeginReloadAssembly (149ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1244ms)
+			LoadAssemblies (95ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (310ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (714ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (23ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (480ms)
+				ProcessInitializeOnLoadMethodAttributes (114ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.94 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4707.
+Memory consumption went from 190.4 MB to 189.8 MB.
+Total: 4.838300 ms (FindLiveObjects: 0.331400 ms CreateObjectMapping: 0.134400 ms MarkObjects: 4.233700 ms  DeleteObjects: 0.137200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012092 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.518 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1519ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1260ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (306ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (703ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (475ms)
+				ProcessInitializeOnLoadMethodAttributes (107ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.01 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4711.
+Memory consumption went from 190.4 MB to 189.8 MB.
+Total: 4.477400 ms (FindLiveObjects: 0.359700 ms CreateObjectMapping: 0.139200 ms MarkObjects: 3.861400 ms  DeleteObjects: 0.115400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008615 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.349 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1349ms)
+		BeginReloadAssembly (138ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1099ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (256ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (624ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (413ms)
+				ProcessInitializeOnLoadMethodAttributes (98ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.03 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4715.
+Memory consumption went from 190.4 MB to 189.8 MB.
+Total: 3.701000 ms (FindLiveObjects: 0.318700 ms CreateObjectMapping: 0.134400 ms MarkObjects: 3.135800 ms  DeleteObjects: 0.111200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008951 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.75 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.757 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1758ms)
+		BeginReloadAssembly (184ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1419ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (370ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (787ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (535ms)
+				ProcessInitializeOnLoadMethodAttributes (103ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 11.30 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.43 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4719.
+Memory consumption went from 190.4 MB to 189.9 MB.
+Total: 8.663600 ms (FindLiveObjects: 0.469800 ms CreateObjectMapping: 0.376600 ms MarkObjects: 7.647500 ms  DeleteObjects: 0.168200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 4699.623315 seconds.
+  path: Assets/Hotel Cafe/Textures
+  artifactKey: Guid(f45f71e85587fff49bad417d44814385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures using Guid(f45f71e85587fff49bad417d44814385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5dbe133b85652b06f4ec08ee3240c67') in 0.019194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.025028 seconds.
+  path: Assets/Hotel Cafe/Textures/Asphalt N.png
+  artifactKey: Guid(3f1f792265aa94d4e92514dc9e350264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/Asphalt N.png using Guid(3f1f792265aa94d4e92514dc9e350264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d79e05f039b9748636c37ee18339586') in 0.124987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Hotel Cafe/Textures/Brick wall 1.png
+  artifactKey: Guid(17a11f22c6684bc4fb4cb714757ec94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/Brick wall 1.png using Guid(17a11f22c6684bc4fb4cb714757ec94c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7172509778092e50fb7f683d2cccfd6e') in 0.023328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hotel Cafe/Textures/plants 1.png
+  artifactKey: Guid(996443121acfd644bb6befdcd7abb63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/plants 1.png using Guid(996443121acfd644bb6befdcd7abb63e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5254fe1b0ed398b4e48893546a90dc7b') in 0.020984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hotel Cafe/Textures/plants N.png
+  artifactKey: Guid(718f68894b268fb42aa392111de96c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/plants N.png using Guid(718f68894b268fb42aa392111de96c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a1bc240d66c423bc3b78a2b3b4b785') in 0.064388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hotel Cafe/Textures/cake2.png
+  artifactKey: Guid(7336f3a33beb38a4fb6182380991cf8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/cake2.png using Guid(7336f3a33beb38a4fb6182380991cf8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25196f40ac7e97920b5f4b3bb51eeb5a') in 0.018067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hotel Cafe/Textures/leaf 4 N.png
+  artifactKey: Guid(713d47e63e2cad44a81c01062f7eec4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/leaf 4 N.png using Guid(713d47e63e2cad44a81c01062f7eec4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ecf258a98df0ba2746fe6d9b9d93df4') in 0.021414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Hotel Cafe/Textures/leaf 2 N.png
+  artifactKey: Guid(fe5d22ff61fe5c344875fd17eb99988f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/leaf 2 N.png using Guid(fe5d22ff61fe5c344875fd17eb99988f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7419778a020bf561cee59fd8abd27e') in 0.020092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hotel Cafe/Textures/napkin holder.png
+  artifactKey: Guid(6a3afdc8a8c3a9249878d5d797c76295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/napkin holder.png using Guid(6a3afdc8a8c3a9249878d5d797c76295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd646b29a54e4da6a60d15badec6e1cad') in 0.019453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Hotel Cafe/Textures/plants 1 N.png
+  artifactKey: Guid(9cdb781efcb7cc54b92d50701f79158d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/plants 1 N.png using Guid(9cdb781efcb7cc54b92d50701f79158d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c276d7ec57806566782b6f765399ab7e') in 0.019017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Hotel Cafe/Textures/cabinet wood N.png
+  artifactKey: Guid(0dc18253d4759b744bc5084d61adb268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/cabinet wood N.png using Guid(0dc18253d4759b744bc5084d61adb268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad54dacd32636f7ae3cd3bd13fad609d') in 0.020125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hotel Cafe/Textures/NewLayer.terrainlayer
+  artifactKey: Guid(383998f8daa42344bba38d49adba55d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/NewLayer.terrainlayer using Guid(383998f8daa42344bba38d49adba55d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1041b5a992d5028d087ffc05c717153e') in 0.026570 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hotel Cafe/Textures/plant 6 N.png
+  artifactKey: Guid(eff935195e8495a4c8724afd0a014ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/plant 6 N.png using Guid(eff935195e8495a4c8724afd0a014ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba69060fd5419ef964c4266d80ccef9') in 0.018597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hotel Cafe/Textures/fabric texture 1 N.png
+  artifactKey: Guid(7e663db0607b66a449c607719eeb20d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/fabric texture 1 N.png using Guid(7e663db0607b66a449c607719eeb20d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458883284eeb1c1d83a2995d6859a55f') in 0.033481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hotel Cafe/Textures/leaf 3.png
+  artifactKey: Guid(e93ae421df3da8746b4cd29647220db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/leaf 3.png using Guid(e93ae421df3da8746b4cd29647220db7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b8fa74342c9177f90523cde12f56e36') in 0.019283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Hotel Cafe/Textures/cake 1.png
+  artifactKey: Guid(0bc1628861fac2846b43f4f411ceb775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/cake 1.png using Guid(0bc1628861fac2846b43f4f411ceb775) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28fd7bd271f2131ff9dfbfeea8ed416') in 0.022618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Hotel Cafe/Textures/oil N.png
+  artifactKey: Guid(fc5bd673b6b972a4bad6ca1681a74f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/oil N.png using Guid(fc5bd673b6b972a4bad6ca1681a74f9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a75556c5b1dbd6c0e71dfd2fd08f68e5') in 0.018815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hotel Cafe/Textures/metal 2 N.png
+  artifactKey: Guid(2aa51ddd597c0874e9595b94162934e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/metal 2 N.png using Guid(2aa51ddd597c0874e9595b94162934e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dd2df77ccc20792e1246bf15b700418') in 0.019606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hotel Cafe/Textures/plant 6.png
+  artifactKey: Guid(f7fd5087cf7643840bbff67163fc8ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/plant 6.png using Guid(f7fd5087cf7643840bbff67163fc8ab6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b86296e9cb402e7fe25c71812699c8') in 0.018142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hotel Cafe/Textures/Brick wall 1 N.png
+  artifactKey: Guid(3effddee5ef9dec4481152e508094e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/Brick wall 1 N.png using Guid(3effddee5ef9dec4481152e508094e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349eddae6b3dc98dea6cf3a989aa3f9c') in 0.018599 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Hotel Cafe/Textures/door wood N.png
+  artifactKey: Guid(983aceb00e90fa54c990f4f4aea6d9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/door wood N.png using Guid(983aceb00e90fa54c990f4f4aea6d9a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f448def8e77bd3996c88da49816e9f74') in 0.018738 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Hotel Cafe/Textures/floor.png
+  artifactKey: Guid(8fb1b5ee542ac6e4bad8dcb785771cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/floor.png using Guid(8fb1b5ee542ac6e4bad8dcb785771cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebffc4db2cd789b5f811d22db8c25bc6') in 0.026946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Hotel Cafe/Textures/color wall 1.png
+  artifactKey: Guid(dd34ce7c4ad253f41b02b4ed3aa29d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/color wall 1.png using Guid(dd34ce7c4ad253f41b02b4ed3aa29d48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d9246d4061b7d0e9aa0a7de70aa6d5') in 0.017892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hotel Cafe/Textures/machine colors.png
+  artifactKey: Guid(5eac710b0a395a144983debbf2faf6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/machine colors.png using Guid(5eac710b0a395a144983debbf2faf6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3bfef2ca49c81a5778db83d9c6b533') in 0.017329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Hotel Cafe/Textures/pillow fabric.png
+  artifactKey: Guid(76e6d6dccca299a4590b265b51652e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/pillow fabric.png using Guid(76e6d6dccca299a4590b265b51652e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521f7e8165d14027dbf22d85ff1c5b2a') in 0.026070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hotel Cafe/Textures/dish 2.png
+  artifactKey: Guid(916e090631ba2834d9268e90eb1685a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/dish 2.png using Guid(916e090631ba2834d9268e90eb1685a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c335563837eb67b2b185bd183d2f9c19') in 0.018000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hotel Cafe/Textures/cameras.png
+  artifactKey: Guid(f5d2d3bd96ce2004c95b637b20f1a7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/cameras.png using Guid(f5d2d3bd96ce2004c95b637b20f1a7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a38178d9ede55aeeb46ef68237c686') in 0.017638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Hotel Cafe/Textures/leaf 1 N.png
+  artifactKey: Guid(68f4660d6f75dac43bdc8f8ac07bdaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/leaf 1 N.png using Guid(68f4660d6f75dac43bdc8f8ac07bdaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f86b697fdf3beaae42b6e58797bb1114') in 0.022056 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Hotel Cafe/Textures/pictures 1.png
+  artifactKey: Guid(26075a984d438c140a579e54c1aef86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/pictures 1.png using Guid(26075a984d438c140a579e54c1aef86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0a49955c7d01522df1ca998c042cb44') in 0.019886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Hotel Cafe/Textures/napkin holder N.png
+  artifactKey: Guid(cfceae1f44d8b5d40be347e06fad6040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/napkin holder N.png using Guid(cfceae1f44d8b5d40be347e06fad6040) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52466082815fa32882bef4001c37694b') in 0.023037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Hotel Cafe/Textures/Clock.png
+  artifactKey: Guid(db3c5bf24cf265749b321ad451f3f167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/Clock.png using Guid(db3c5bf24cf265749b321ad451f3f167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4daf35d60914615e1586956cb7c2382b') in 0.022752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Hotel Cafe/Textures/fabric texture 2.png
+  artifactKey: Guid(ed38b299f0b2c8447952871e750d419f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/fabric texture 2.png using Guid(ed38b299f0b2c8447952871e750d419f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e644a32f5dabb1e0bb8e4f4d2d5f4830') in 0.019790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hotel Cafe/Textures/petal.png
+  artifactKey: Guid(6380353086cb3614a9db982a9e392da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/petal.png using Guid(6380353086cb3614a9db982a9e392da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abd5a22b839aac888757600a91d5633') in 0.020997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hotel Cafe/Textures/chair wood N.png
+  artifactKey: Guid(a473115d2214eaf4f88007f1c9a3e475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/chair wood N.png using Guid(a473115d2214eaf4f88007f1c9a3e475) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09fd3657b9659559d578ffe15b1ecc41') in 0.021796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Hotel Cafe/Textures/plant 7 leaf N.png
+  artifactKey: Guid(be48e7ba53bb7a340a172640ab00584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/plant 7 leaf N.png using Guid(be48e7ba53bb7a340a172640ab00584d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faeb5b2173fd995a9408a50ee05678c3') in 0.024020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hotel Cafe/Textures/door wood.png
+  artifactKey: Guid(8308451275a75354d899c228e716d2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/door wood.png using Guid(8308451275a75354d899c228e716d2fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a44904077312e5512a56b53cd11eb31') in 0.021190 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Hotel Cafe/Textures/beer.png
+  artifactKey: Guid(bb0684574b43cb447ae635018a50c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/beer.png using Guid(bb0684574b43cb447ae635018a50c051) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da4c3ba650ac96c53fb3893720cbf340') in 0.020095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Hotel Cafe/Textures/brioche N.png
+  artifactKey: Guid(6c34563749a203c4281c6c68e262e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/brioche N.png using Guid(6c34563749a203c4281c6c68e262e447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41216196e6fc53ace0d70665c0278875') in 0.022221 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Hotel Cafe/Textures/magazine.png
+  artifactKey: Guid(b22aa2f1a949de54bb5f08b602c25e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/magazine.png using Guid(b22aa2f1a949de54bb5f08b602c25e68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc30a34e41a490644d339723f51f3447') in 0.023569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Hotel Cafe/Textures/milk 2 N.png
+  artifactKey: Guid(a9fa15a3d6aec5c438a909d54c9e9d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/milk 2 N.png using Guid(a9fa15a3d6aec5c438a909d54c9e9d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48ac2daac0846dcd15b90e29dfd9531') in 0.024166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Hotel Cafe/Textures/petal N.png
+  artifactKey: Guid(d349900c58f8c0c40ab3bf7c3c4d5fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hotel Cafe/Textures/petal N.png using Guid(d349900c58f8c0c40ab3bf7c3c4d5fbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c87387124c04f7f1af637d01b051f8') in 0.026749 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.248626 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(901fc3f285e7a6442819e2c6ac4bdf85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(901fc3f285e7a6442819e2c6ac4bdf85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be650038fd671f78e99785e84295d6d') in 0.007292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.024459 seconds.
+  path: Assets/Materials/Round Mat.mat
+  artifactKey: Guid(34db420c6c2ca1c428e918832657ac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Round Mat.mat using Guid(34db420c6c2ca1c428e918832657ac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62f671d47d2b0b334ccc244883af058') in 1.806020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.355030 seconds.
+  path: Assets/Materials/Ground Mat.mat
+  artifactKey: Guid(34db420c6c2ca1c428e918832657ac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ground Mat.mat using Guid(34db420c6c2ca1c428e918832657ac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b0967a734a86e49c407372eb3e13e18') in 0.018056 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011851 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.13 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.891 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1892ms)
+		BeginReloadAssembly (227ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1499ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (353ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (860ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (588ms)
+				ProcessInitializeOnLoadMethodAttributes (116ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.94 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4810.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 4.892500 ms (FindLiveObjects: 0.351700 ms CreateObjectMapping: 0.147400 ms MarkObjects: 4.240400 ms  DeleteObjects: 0.151800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013189 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.82 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.908 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1910ms)
+		BeginReloadAssembly (198ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1342ms)
-			LoadAssemblies (166ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1557ms)
+			LoadAssemblies (126ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (524ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (429ms)
+			SetupTypeCache (347ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (875ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (99ms)
-				ProcessInitializeOnLoadAttributes (246ms)
-				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (3ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (587ms)
+				ProcessInitializeOnLoadMethodAttributes (120ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2805 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.1 MB.
-System memory in use after: 145.3 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3257.
-Total: 5.597800 ms (FindLiveObjects: 0.442600 ms CreateObjectMapping: 0.187300 ms MarkObjects: 4.834500 ms  DeleteObjects: 0.131600 ms)
+Refreshing native plugins compatible for Editor in 10.16 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4814.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 10.369700 ms (FindLiveObjects: 0.719700 ms CreateObjectMapping: 0.465200 ms MarkObjects: 8.601000 ms  DeleteObjects: 0.581600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.905 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1907ms)
+		BeginReloadAssembly (211ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1551ms)
+			LoadAssemblies (126ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (375ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (875ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (118ms)
+				ProcessInitializeOnLoadAttributes (595ms)
+				ProcessInitializeOnLoadMethodAttributes (116ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.11 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4818.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 5.102500 ms (FindLiveObjects: 0.338800 ms CreateObjectMapping: 0.135700 ms MarkObjects: 4.466300 ms  DeleteObjects: 0.160400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Hotel Cafe/Models/Materials/white color wall.mat
-  artifactKey: Guid(cc3a992bb28b36440a006ba28ca49961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Models/Materials/white color wall.mat using Guid(cc3a992bb28b36440a006ba28ca49961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b718dfc9ea0d01ea1e4982bb73fd4f95') in 1.336542 seconds 
-  Import took 1.344690 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.808665 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Clock.prefab
-  artifactKey: Guid(11429873c8edbbf479f814cd4b59d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Clock.prefab using Guid(11429873c8edbbf479f814cd4b59d3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53baeec24c545bfc8b480a611a699469') in 0.187779 seconds 
-  Import took 0.226676 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Knife.prefab
-  artifactKey: Guid(d39148b8fd773a648b736620230d9f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Knife.prefab using Guid(d39148b8fd773a648b736620230d9f39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3f17098f3faa11f6505978e7bc2cc58') in 0.011580 seconds 
-  Import took 0.017001 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000287 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 3.prefab
-  artifactKey: Guid(32c0390c620d9ea49ae0b7e4c12ea2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 3.prefab using Guid(32c0390c620d9ea49ae0b7e4c12ea2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c55a70453cb5512eec9cebe3acf6a94') in 0.015510 seconds 
-  Import took 0.021484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 5.prefab
-  artifactKey: Guid(499b7c4ea869f35498fc15883ffd6419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 5.prefab using Guid(499b7c4ea869f35498fc15883ffd6419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8eff02277f59614ba6e5c4b476b661e') in 0.130997 seconds 
-  Import took 0.152947 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001427 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Glass 1.prefab
-  artifactKey: Guid(0b7c01f426cf04047a921a34e2a4c964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Glass 1.prefab using Guid(0b7c01f426cf04047a921a34e2a4c964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1baa7c489b1cf5890d32ab0b19a8ec1') in 0.076659 seconds 
-  Import took 0.093551 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Orange juice.prefab
-  artifactKey: Guid(e218bb7158037d244b78868bca262f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Orange juice.prefab using Guid(e218bb7158037d244b78868bca262f00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cdb901926018c813568e388addc1e74') in 0.047630 seconds 
-  Import took 0.079423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Oil botlle.prefab
-  artifactKey: Guid(7dcfc1853031c6d478e7f8511cc0c379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Oil botlle.prefab using Guid(7dcfc1853031c6d478e7f8511cc0c379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2e7f4f7fe1afb256e5edf4074f65ba') in 0.044591 seconds 
-  Import took 0.055487 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000400 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Glass 2.prefab
-  artifactKey: Guid(328bb954987bb2f4485939d7a437bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Glass 2.prefab using Guid(328bb954987bb2f4485939d7a437bb69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214147dd0faf7afc902576cfaf6d20f2') in 0.193495 seconds 
-  Import took 0.236231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wall 4.prefab
-  artifactKey: Guid(0cdbd3534a527ed4e9f1493ead911c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wall 4.prefab using Guid(0cdbd3534a527ed4e9f1493ead911c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59abb4ddc7a5040500e1382a37a782e') in 0.170844 seconds 
-  Import took 0.186353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Shelf.prefab
-  artifactKey: Guid(c11ba1536b428684fb0335e6b6e2e268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Shelf.prefab using Guid(c11ba1536b428684fb0335e6b6e2e268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba250c29383bf8b3fec9992386d496a9') in 0.164481 seconds 
-  Import took 0.177010 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000366 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wall 5.prefab
-  artifactKey: Guid(16810b5a473e2774696a514c78e7ba74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wall 5.prefab using Guid(16810b5a473e2774696a514c78e7ba74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07efeb0b4e5fbb8fcfddb7a979b313e7') in 0.169962 seconds 
-  Import took 0.202354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020445 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Bar furniture.prefab
-  artifactKey: Guid(d139758745076b3459f206f7d9c8ae59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Bar furniture.prefab using Guid(d139758745076b3459f206f7d9c8ae59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b882b7ba137fac6a3866393f739896') in 0.041098 seconds 
-  Import took 0.103826 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Ceiling.prefab
-  artifactKey: Guid(dedc01f8fbe87d14191607f3d0f19561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Ceiling.prefab using Guid(dedc01f8fbe87d14191607f3d0f19561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1124a4b2ae8f9ee7d1b151e4246bd692') in 0.045546 seconds 
-  Import took 0.111907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000522 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wall 2.prefab
-  artifactKey: Guid(643e5aa89313c1d419c781325fd4e973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wall 2.prefab using Guid(643e5aa89313c1d419c781325fd4e973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61af788cc997977de5a3ba6a3052202') in 0.157205 seconds 
-  Import took 0.208805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.039553 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Poster 3.prefab
-  artifactKey: Guid(c8aecebfdf9785a4da1c8479eb1725d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Poster 3.prefab using Guid(c8aecebfdf9785a4da1c8479eb1725d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d90a590d99705154157a780c6b37cd') in 0.131100 seconds 
-  Import took 0.239239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Fresh cola.prefab
-  artifactKey: Guid(848e8d782445edf4480acb6de7ca1e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Fresh cola.prefab using Guid(848e8d782445edf4480acb6de7ca1e03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bffee25b15b8f0e76d59eecb198278') in 0.037927 seconds 
-  Import took 0.087852 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000271 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Liquor bottle 2.prefab
-  artifactKey: Guid(c1946cebe89be9f4abea5cadf53689b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Liquor bottle 2.prefab using Guid(c1946cebe89be9f4abea5cadf53689b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c23dfa9176496fdcf0041977996dcf2') in 0.106035 seconds 
-  Import took 0.135464 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wine bottle 2.prefab
-  artifactKey: Guid(0655a29514b7d7a41bd51db4293ba76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wine bottle 2.prefab using Guid(0655a29514b7d7a41bd51db4293ba76d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a59b788dc0e2a5989bea73c0cd4cb99b') in 0.021448 seconds 
-  Import took 0.031109 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Orange.prefab
-  artifactKey: Guid(26862821be3979147bc41165fd1550f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Orange.prefab using Guid(26862821be3979147bc41165fd1550f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611d2433797fc486cc0ce4d3d54ae21a') in 0.165461 seconds 
-  Import took 0.249990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.015968 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 2.prefab
-  artifactKey: Guid(d7028f0e62bde3a469d85a2a7b4c4410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 2.prefab using Guid(d7028f0e62bde3a469d85a2a7b4c4410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaae39a645c98dbd72b2526118f5248f') in 0.092941 seconds 
-  Import took 0.110368 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Cabinet.prefab
-  artifactKey: Guid(1a7ab132e8d1c8e45a60cadb29ce5c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Cabinet.prefab using Guid(1a7ab132e8d1c8e45a60cadb29ce5c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f1843f003152dad39a47d14cf34b8c') in 0.096397 seconds 
-  Import took 0.127422 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Security camera.prefab
-  artifactKey: Guid(0a33cf5c7dcb45042933fe6911bd8e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Security camera.prefab using Guid(0a33cf5c7dcb45042933fe6911bd8e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2480168e9f56ca55aa487fc557d06b35') in 0.023663 seconds 
-  Import took 0.036839 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000297 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Chair 4.prefab
-  artifactKey: Guid(39881fc1b43a87349b5cc81de8d380bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Chair 4.prefab using Guid(39881fc1b43a87349b5cc81de8d380bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15c18a6d14b6bf0acc12eb9117a2ef80') in 0.326866 seconds 
-  Import took 0.365606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Jar.prefab
-  artifactKey: Guid(69672d367b3ac9748a0930348d0e04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Jar.prefab using Guid(69672d367b3ac9748a0930348d0e04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0eaf61de3d9b8977bbe485d2ab53ea0') in 0.141872 seconds 
-  Import took 0.276888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.044637 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Poster 2.prefab
-  artifactKey: Guid(85b76e64cf284f640b598d5924905f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Poster 2.prefab using Guid(85b76e64cf284f640b598d5924905f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34ee9bd6de9353349cc09ace35e05be') in 0.059547 seconds 
-  Import took 0.069109 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000414 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Omelette.prefab
-  artifactKey: Guid(8b71338ba1ad525449204a2097b096a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Omelette.prefab using Guid(8b71338ba1ad525449204a2097b096a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34b31d99555e71df4454621c4f6a507c') in 0.168254 seconds 
-  Import took 0.219069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000342 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Napkin.prefab
-  artifactKey: Guid(e4a45265c6ba2fa4f9c363cb44f6a79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Napkin.prefab using Guid(e4a45265c6ba2fa4f9c363cb44f6a79e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aea43495daf40aa8a5260b8afd76b1f') in 0.053166 seconds 
-  Import took 0.062809 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Door 1.prefab
-  artifactKey: Guid(1e97a69cc4f57684daf9f89e9e14db02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Door 1.prefab using Guid(1e97a69cc4f57684daf9f89e9e14db02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33f70fcd772b297505ba41073678d37') in 0.024205 seconds 
-  Import took 0.059280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Table 1.prefab
-  artifactKey: Guid(f9bed01097973554388207360389d845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Table 1.prefab using Guid(f9bed01097973554388207360389d845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4febec60c4bc25adf523dc10394396ac') in 0.421217 seconds 
-  Import took 0.495735 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001013 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Floor.prefab
-  artifactKey: Guid(ec5d2a2fba9c9244cbbe05c3e64a63c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Floor.prefab using Guid(ec5d2a2fba9c9244cbbe05c3e64a63c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e820a5546a15e7956dfc8ebac5ab0c') in 0.154279 seconds 
-  Import took 0.223322 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Flowers.prefab
-  artifactKey: Guid(2217f2fd568a6514dbbba1c0d5e1a92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Flowers.prefab using Guid(2217f2fd568a6514dbbba1c0d5e1a92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be44d1a23cb6d89e54e2e1bce12d6c7') in 0.030028 seconds 
-  Import took 0.043720 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Milk.prefab
-  artifactKey: Guid(4caba20e04b87804fa54268079bce6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Milk.prefab using Guid(4caba20e04b87804fa54268079bce6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c10e063d0b2ac733fcee77c8d20b21') in 0.016084 seconds 
-  Import took 0.028822 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000506 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Bar.prefab
-  artifactKey: Guid(23b85cd05cf458249a4e072e026819d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Bar.prefab using Guid(23b85cd05cf458249a4e072e026819d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ae6f17ed23e44378e98d740dd906a9') in 0.023449 seconds 
-  Import took 0.080628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000313 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Exit picture.prefab
-  artifactKey: Guid(6872a9c51ad840948b6c1d7e5924e907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Exit picture.prefab using Guid(6872a9c51ad840948b6c1d7e5924e907) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b4a9c24f31c7ffda69ffb842d7033e') in 0.014725 seconds 
-  Import took 0.021538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wall 1.prefab
-  artifactKey: Guid(5d7a6210f65ec3142bb422c9a476ed83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wall 1.prefab using Guid(5d7a6210f65ec3142bb422c9a476ed83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca1765b2b43b16f4d814b491a72b6e01') in 0.013409 seconds 
-  Import took 0.023007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Window.prefab
-  artifactKey: Guid(c2d47baa78309c74ea2b517e893aff06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Window.prefab using Guid(c2d47baa78309c74ea2b517e893aff06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f94ab93a342266567ab1f29b505bad') in 0.019212 seconds 
-  Import took 0.025626 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Cup 1.prefab
-  artifactKey: Guid(bf703339e1682254dad02ae256e18b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Cup 1.prefab using Guid(bf703339e1682254dad02ae256e18b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3034b13cd24e0cda380479165474a99c') in 0.014452 seconds 
-  Import took 0.023007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wall 6.prefab
-  artifactKey: Guid(4608abb5d80673b4485cfb3f8dd8b38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wall 6.prefab using Guid(4608abb5d80673b4485cfb3f8dd8b38d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ea0268378bde1adf18718c0f1cc12d') in 0.015041 seconds 
-  Import took 0.023907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Tv.prefab
-  artifactKey: Guid(1371c84e878884946afa26a91fa65cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Tv.prefab using Guid(1371c84e878884946afa26a91fa65cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4ae90c82b034f110333efe53d531ba') in 0.016488 seconds 
-  Import took 0.024769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000537 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Ceiling lamp 2.prefab
-  artifactKey: Guid(36641f77209c6a24b8601a2ab8d7d6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Ceiling lamp 2.prefab using Guid(36641f77209c6a24b8601a2ab8d7d6b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e83b109410ee20f46de88d67a03eabe') in 0.077297 seconds 
-  Import took 0.085655 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.016268 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wine bottle 1.prefab
-  artifactKey: Guid(20186672d8554704bb0109be1c07d410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wine bottle 1.prefab using Guid(20186672d8554704bb0109be1c07d410) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70075d3d675c47931e483133af84286e') in 0.039574 seconds 
-  Import took 0.058627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.007017 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Water bottle.prefab
-  artifactKey: Guid(273062a2cb34fee4aa7b9559b0c2244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Water bottle.prefab using Guid(273062a2cb34fee4aa7b9559b0c2244b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091c9c31356fe8fd8fe32b41b43e0271') in 0.039487 seconds 
-  Import took 0.051177 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000380 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Cash register.prefab
-  artifactKey: Guid(f802f120a03167d4aa178d35976f67a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Cash register.prefab using Guid(f802f120a03167d4aa178d35976f67a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a1d7a05b88922ddb8f8760c9c60771') in 0.039085 seconds 
-  Import took 0.066787 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000523 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Spoon.prefab
-  artifactKey: Guid(e41728572e1dc4f48a0fb59accc35591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Spoon.prefab using Guid(e41728572e1dc4f48a0fb59accc35591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c5d14ab3abab26aee2e3f7dc3405ae') in 0.015054 seconds 
-  Import took 0.021431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001114 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Cake 1.prefab
-  artifactKey: Guid(ee7d07bc3be455541abddec0f8b826ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Cake 1.prefab using Guid(ee7d07bc3be455541abddec0f8b826ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4778546b1ef1d3707abad34f533b8c0') in 0.054692 seconds 
-  Import took 0.077845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014131 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Chair 3.prefab
-  artifactKey: Guid(cc1f6d8e16b6dcd418bda6d863986ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Chair 3.prefab using Guid(cc1f6d8e16b6dcd418bda6d863986ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275eb9c527fa1ad68fdfaa17465c8904') in 0.054761 seconds 
-  Import took 0.086848 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000338 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 4.prefab
-  artifactKey: Guid(a8a0cb90375f8e74aa250fc34bcaed30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 4.prefab using Guid(a8a0cb90375f8e74aa250fc34bcaed30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '532a33eb6f6c71bc92743383d9b8e548') in 0.025240 seconds 
-  Import took 0.058324 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.020770 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Magazine.prefab
-  artifactKey: Guid(439decd1d1b70944f9ff2aa5779e20e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Magazine.prefab using Guid(439decd1d1b70944f9ff2aa5779e20e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd6525c6a6efbd616615be664fa7edb1') in 0.025842 seconds 
-  Import took 0.035873 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000344 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Pillow.prefab
-  artifactKey: Guid(03e47f8162f22574f9489df7e3b8a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Pillow.prefab using Guid(03e47f8162f22574f9489df7e3b8a3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aedd7ba74e8f576edf43b8963ecffd17') in 0.071852 seconds 
-  Import took 0.087566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004792 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Fork.prefab
-  artifactKey: Guid(a52820221a71357499607e36db1ae92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Fork.prefab using Guid(a52820221a71357499607e36db1ae92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2842e56915dec73b991360473e42e991') in 0.046678 seconds 
-  Import took 0.060347 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010128 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Coffee machine.prefab
-  artifactKey: Guid(eae1ed2c7a636f349857f81e55b58444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Coffee machine.prefab using Guid(eae1ed2c7a636f349857f81e55b58444) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22faf24f87127ecf217c4f2dc425bb8b') in 0.032995 seconds 
-  Import took 0.044018 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000378 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Liquor bottle.prefab
-  artifactKey: Guid(5fd83aaeccbba324080fc955ae2e4d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Liquor bottle.prefab using Guid(5fd83aaeccbba324080fc955ae2e4d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f42b04faeffb796c3a748db1339fb143') in 0.062405 seconds 
-  Import took 0.070423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Ceiling element.prefab
-  artifactKey: Guid(234226287dde2ed4a8189da3cb748f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Ceiling element.prefab using Guid(234226287dde2ed4a8189da3cb748f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e466c1fbd9a5a515abd44dec5604d59f') in 0.038080 seconds 
-  Import took 0.046374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.014037 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wall 7.prefab
-  artifactKey: Guid(d6d0a5e83f9453c4e91f7d32a98f2eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wall 7.prefab using Guid(d6d0a5e83f9453c4e91f7d32a98f2eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c601b34ddf0310e14a0237a255a9a48') in 0.045961 seconds 
-  Import took 0.106168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Camera poster.prefab
-  artifactKey: Guid(7a10e0f3b2b090f4fa46153fe9abdd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Camera poster.prefab using Guid(7a10e0f3b2b090f4fa46153fe9abdd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb7ed4bbfaa193430db533a5fa4515f') in 0.036625 seconds 
-  Import took 0.057163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 6.prefab
-  artifactKey: Guid(0e3c311cb7db2c44eba345f82f546222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 6.prefab using Guid(0e3c311cb7db2c44eba345f82f546222) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bde41ab15f07b481119dde2f9bc184') in 0.082904 seconds 
-  Import took 0.091913 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Chair 1.prefab
-  artifactKey: Guid(3643e6af93f9ae441ba679ff83c0d3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Chair 1.prefab using Guid(3643e6af93f9ae441ba679ff83c0d3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760c09475e50dfe2dd3fa621780b0172') in 0.113869 seconds 
-  Import took 0.127223 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000369 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Chair 2.prefab
-  artifactKey: Guid(6035c3f820162354ebc0cfd90504e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Chair 2.prefab using Guid(6035c3f820162354ebc0cfd90504e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423a14e7e1cc5d92592dc878c8ceedb7') in 0.034280 seconds 
-  Import took 0.059055 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Champagne.prefab
-  artifactKey: Guid(300d3d30823aa0041bb3fd7ed385a079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Champagne.prefab using Guid(300d3d30823aa0041bb3fd7ed385a079) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8d39966f71c060ad13cb2533ad1647') in 0.022675 seconds 
-  Import took 0.037567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000316 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Wine.prefab
-  artifactKey: Guid(67bc3b88bacaf1340a6b0b60cc39b9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Wine.prefab using Guid(67bc3b88bacaf1340a6b0b60cc39b9ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c23e21dd52836701749c1459df6f49d') in 0.037198 seconds 
-  Import took 0.073603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000521 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Sofa 1.prefab
-  artifactKey: Guid(922e4e8ee5cefb64eb6f812983c2328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Sofa 1.prefab using Guid(922e4e8ee5cefb64eb6f812983c2328c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb13ae3cba13efdf98fee2adee1819b7') in 0.226389 seconds 
-  Import took 0.239385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.010028 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Dish 2.prefab
-  artifactKey: Guid(b293adf9b613d474ca9c1a8cd8892978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Dish 2.prefab using Guid(b293adf9b613d474ca9c1a8cd8892978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00cff4d0ecc6a2222cc200a3a84fa99') in 0.059312 seconds 
-  Import took 0.093138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000441 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Table 2.prefab
-  artifactKey: Guid(fdc0b74adafdc9d4c86d844a5fa9320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Table 2.prefab using Guid(fdc0b74adafdc9d4c86d844a5fa9320b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41751eee36cd5373f533fb28d3dae8a9') in 0.108357 seconds 
-  Import took 0.117769 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Poster 1.prefab
-  artifactKey: Guid(60fe04ab12012f64cbc19c9df1f13245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Poster 1.prefab using Guid(60fe04ab12012f64cbc19c9df1f13245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df1610bcd2ff6887252a0de27267173') in 0.027269 seconds 
-  Import took 0.065059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.029301 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Shelf 2.prefab
-  artifactKey: Guid(26c75c3af8325b2458620b51d3b6d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Shelf 2.prefab using Guid(26c75c3af8325b2458620b51d3b6d216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72eef1145c7177b94b1b47b7e7b39258') in 0.128732 seconds 
-  Import took 0.139468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Napkin holder.prefab
-  artifactKey: Guid(71be094fde590444e9e29dffc49c7328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Napkin holder.prefab using Guid(71be094fde590444e9e29dffc49c7328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a89a8923e6a1b3777ba65450856e306') in 0.100171 seconds 
-  Import took 0.124753 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Dish 1.prefab
-  artifactKey: Guid(7d3a79360bc1b25418d95ee48f11e545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Dish 1.prefab using Guid(7d3a79360bc1b25418d95ee48f11e545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da835c355ab07f2b233a5e132d78840') in 0.018240 seconds 
-  Import took 0.090317 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Pastries.prefab
-  artifactKey: Guid(49eb97d197067e04991ce49fd335557e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Pastries.prefab using Guid(49eb97d197067e04991ce49fd335557e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a8759eafaa848ac960c4918c685095') in 0.023757 seconds 
-  Import took 0.184423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.034484 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 1.prefab
-  artifactKey: Guid(4e8bd534bd2c6664cb50f5d7cc1353fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 1.prefab using Guid(4e8bd534bd2c6664cb50f5d7cc1353fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb650f5aa2ee7d00d300433f09895ebd') in 0.086418 seconds 
-  Import took 0.133855 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000429 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Ceiling lamp.prefab
-  artifactKey: Guid(feb0569920880d943a39d8fd5140867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Ceiling lamp.prefab using Guid(feb0569920880d943a39d8fd5140867b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87fa23a3e8cbba511fc3a54991ebf01') in 0.071092 seconds 
-  Import took 0.125158 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Sofa 2.prefab
-  artifactKey: Guid(28e18e60ad2cc2e4e854701892f54e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Sofa 2.prefab using Guid(28e18e60ad2cc2e4e854701892f54e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '917cfe2154d2e88feab06fbf49b64e05') in 0.031809 seconds 
-  Import took 0.093734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.027490 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Beer 1.prefab
-  artifactKey: Guid(c542aa8b170b714458a0e1360ced371b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Beer 1.prefab using Guid(c542aa8b170b714458a0e1360ced371b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '395a722c5e06df60911759698f4c2dbd') in 0.055924 seconds 
-  Import took 0.186856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Crystal bell.prefab
-  artifactKey: Guid(65d3a7c9f9e812d4595ef3141c04c145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Crystal bell.prefab using Guid(65d3a7c9f9e812d4595ef3141c04c145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a30c1a03fdbc4e71b3b56dae2a7c9b') in 0.059779 seconds 
-  Import took 0.087073 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000747 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Entrance Door.prefab
-  artifactKey: Guid(359fe5100f0353943a44d84fb481b068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Entrance Door.prefab using Guid(359fe5100f0353943a44d84fb481b068) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579eec5eb2581b9b3adebc010be42738') in 0.124709 seconds 
-  Import took 0.137150 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000454 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Orange juice machine.prefab
-  artifactKey: Guid(cb0871bc49d86854eb695185c590bdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Orange juice machine.prefab using Guid(cb0871bc49d86854eb695185c590bdf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3dc01df02f44f2325580d4e5b4c575') in 0.384209 seconds 
-  Import took 0.401468 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000248 seconds.
-  path: Assets/Hotel Cafe/Prefabs/Plant 7.prefab
-  artifactKey: Guid(957bca4a66c8a7b41b7e0e3b9cdaf9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Hotel Cafe/Prefabs/Plant 7.prefab using Guid(957bca4a66c8a7b41b7e0e3b9cdaf9e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d4c30c022bc7847edfb7534ebbedd57') in 0.112981 seconds 
-  Import took 0.187258 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.013025 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.95 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.930 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1931ms)
+		BeginReloadAssembly (238ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1558ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (350ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (918ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (571ms)
+				ProcessInitializeOnLoadMethodAttributes (188ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.97 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4822.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 6.351100 ms (FindLiveObjects: 0.548300 ms CreateObjectMapping: 0.306800 ms MarkObjects: 5.367000 ms  DeleteObjects: 0.127900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010647 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.822 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1823ms)
+		BeginReloadAssembly (199ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (65ms)
+		EndReloadAssembly (1473ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (850ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (578ms)
+				ProcessInitializeOnLoadMethodAttributes (118ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.22 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4826.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 6.326400 ms (FindLiveObjects: 0.427800 ms CreateObjectMapping: 0.443100 ms MarkObjects: 5.330300 ms  DeleteObjects: 0.124200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010403 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.41 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.824 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1825ms)
+		BeginReloadAssembly (197ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1447ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (835ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (110ms)
+				ProcessInitializeOnLoadAttributes (564ms)
+				ProcessInitializeOnLoadMethodAttributes (116ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 6.15 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4830.
+Memory consumption went from 206.9 MB to 206.3 MB.
+Total: 4.410300 ms (FindLiveObjects: 0.322100 ms CreateObjectMapping: 0.133800 ms MarkObjects: 3.841300 ms  DeleteObjects: 0.112000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009616 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.76 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1887ms)
+		BeginReloadAssembly (258ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (13ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (1497ms)
+			LoadAssemblies (128ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (335ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (862ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (30ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (582ms)
+				ProcessInitializeOnLoadMethodAttributes (123ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.72 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4834.
+Memory consumption went from 197.6 MB to 197.1 MB.
+Total: 7.116200 ms (FindLiveObjects: 0.569800 ms CreateObjectMapping: 0.204300 ms MarkObjects: 5.910800 ms  DeleteObjects: 0.430000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012828 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.19 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.869 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1870ms)
+		BeginReloadAssembly (210ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1503ms)
+			LoadAssemblies (125ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (351ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (861ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (31ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (585ms)
+				ProcessInitializeOnLoadMethodAttributes (118ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 7.15 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.18 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4838.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 5.203400 ms (FindLiveObjects: 0.392200 ms CreateObjectMapping: 0.504100 ms MarkObjects: 4.169600 ms  DeleteObjects: 0.136100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010417 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.22 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x0003d] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in C:\Users\Netmedia3\Desktop\Radovi\ZR_2021_ljeto_haramina_emilia\Cat Cafe\Cat-Cafe\Library\PackageCache\com.unity.xr.oculus@1.11.2\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <6073cf49ed704e958b8a66d540dea948>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <6073cf49ed704e958b8a66d540dea948>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <86dcbaabb0ba406bb15eebecad12f7c0>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.941 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1942ms)
+		BeginReloadAssembly (236ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (87ms)
+		EndReloadAssembly (1567ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (339ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (940ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (32ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (114ms)
+				ProcessInitializeOnLoadAttributes (668ms)
+				ProcessInitializeOnLoadMethodAttributes (113ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.33 ms, found 10 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 4092 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (0.6 MB). Loaded Objects now: 4842.
+Memory consumption went from 197.6 MB to 197.0 MB.
+Total: 7.380400 ms (FindLiveObjects: 0.614800 ms CreateObjectMapping: 0.232900 ms MarkObjects: 6.359500 ms  DeleteObjects: 0.171600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1823.358820 seconds.
+  path: Assets/Materials/Ground Mat.mat
+  artifactKey: Guid(34db420c6c2ca1c428e918832657ac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ground Mat.mat using Guid(34db420c6c2ca1c428e918832657ac8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e791b94f20158586384cb257c9079acd') in 0.208313 seconds 

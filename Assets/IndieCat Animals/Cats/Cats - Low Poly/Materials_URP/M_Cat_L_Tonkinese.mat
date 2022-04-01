@@ -103,6 +103,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Boolean_2781CA78: 1
     - Boolean_4C0CF7D3: 1
@@ -118,6 +119,8 @@ Material:
     - Vector1_CAF4B7A: 1.5
     - Vector1_EE791F2B: 0
     - Vector1_F0325914: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_13ACA631: {r: 0, g: 0, b: 0, a: 0}
     - Color_18ADC7B9: {r: 0.5137254, g: 0.4470588, b: 0.40392157, a: 0}
@@ -154,4 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
+  version: 5

@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_Random
-  m_Shader: {fileID: -6465566751694194690, guid: a3a9f0aacada2864da164d4ffa099c23,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: a3a9f0aacada2864da164d4ffa099c23, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -56,6 +55,7 @@ Material:
         m_Texture: {fileID: 2800000, guid: 4f9db88a1a86792499b3418c4505716e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Boolean_2781CA78: 1
     - Boolean_4C0CF7D3: 1
@@ -94,6 +94,7 @@ Material:
     - Color_C0094F21: {r: 0.10196079, g: 0.10196079, b: 0.10196079, a: 0}
     - Color_D1351635: {r: 1, g: 1, b: 1, a: 0}
     - Color_F909C112: {r: 0.8862746, g: 0.58431375, b: 0, a: 0}
+  m_BuildTextureStacks: []
 --- !u!114 &8787082575659964622
 MonoBehaviour:
   m_ObjectHideFlags: 11
@@ -106,4 +107,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 2
+  version: 5
