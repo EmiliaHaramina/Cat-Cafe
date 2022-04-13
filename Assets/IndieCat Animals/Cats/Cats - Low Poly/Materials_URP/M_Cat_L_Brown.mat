@@ -119,6 +119,8 @@ Material:
     - Vector1_CAF4B7A: 0.7
     - Vector1_EE791F2B: 0
     - Vector1_F0325914: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_13ACA631: {r: 0.4392157, g: 0.31764707, b: 0.23529412, a: 0}
     - Color_18ADC7B9: {r: 0.5137254, g: 0.4470588, b: 0.40392157, a: 0}
