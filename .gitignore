@@ -77,3 +77,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Assets/GoogleVR/GVRVideoPlayer.unitypackage.meta
+Assets/GoogleVR/Scripts/InstantPreview/InstantPreview.apk.meta
+Logs/AssetImportWorker0-prev.log
+Logs/AssetImportWorker1-prev.log
+Logs/Packages-Update.log
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
+Packages/manifest.json
+Packages/packages-lock.json
+ProjectSettings/ProjectVersion.txt
