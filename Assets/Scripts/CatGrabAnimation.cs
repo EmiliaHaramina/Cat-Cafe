@@ -11,14 +11,12 @@ public class CatGrabAnimation : MonoBehaviour
 
     public void OnGrabAnimation()
     {
-        Debug.Log("Hi");
         catAnimator.runtimeAnimatorController = grabAnimatorController;
         catAnimator.Play("Entry");
     }
 
     public void OnLetGoAnimation()
     {
-        Debug.Log("Bye");
         catAnimator.runtimeAnimatorController = letGoAnimatorController;
         catAnimator.Play("Entry");
     }
