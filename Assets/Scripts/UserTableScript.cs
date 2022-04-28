@@ -11,11 +11,11 @@ public class UserTableScript : MonoBehaviour
     public List<string> cats = new List<string>();
     public int numberOfCats = 8;
     public int rangeOfCats = 125;
+    public Utility util;
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        util = new Utility();
         List<int> randomNumbers = new List<int>();
 
         Random r = new Random();
@@ -32,16 +32,10 @@ public class UserTableScript : MonoBehaviour
 
                 string catName = "Cat" + rInt;
                 Debug.Log(catName);
-                GameObject cat = findChildFromParent(catParent, catName);
+                GameObject cat = util.findChildFromParent(catParent, catName);
                 cat.SetActive(true);
             }
         }
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 
@@ -59,13 +53,13 @@ public class UserTableScript : MonoBehaviour
                 points++;
             }
 
-            GameObject body = findChildFromParent(collisionObject, "Cat.L");
+            GameObject body = util.findChildFromParent(collisionObject, "Cat.L");
             Material bodyMaterial = body.GetComponent<Renderer>().material;
 
-            GameObject leftEye = findChildFromParent(collisionObject, "Cat.L_Eye.L");
+            GameObject leftEye = util.findChildFromParent(collisionObject, "Cat.L_Eye.L");
             Material leftEyeMaterial = leftEye.GetComponent<Renderer>().material;
 
-            GameObject rightEye = findChildFromParent(collisionObject, "Cat.L_Eye.R");
+            GameObject rightEye = util.findChildFromParent(collisionObject, "Cat.L_Eye.R");
             Material rightEyeMaterial = rightEye.GetComponent<Renderer>().material;
 
             collisionObject.SetActive(false);
@@ -73,15 +67,15 @@ public class UserTableScript : MonoBehaviour
             GameObject finalCatParent = GameObject.Find("CatsFinalPosition");
             string finalCatName = "CatFinal" + points;
 
-            GameObject finalCat = findChildFromParent(finalCatParent, finalCatName);
+            GameObject finalCat = util.findChildFromParent(finalCatParent, finalCatName);
 
-            GameObject finalBody = findChildFromParent(finalCat, "Cat.L");
+            GameObject finalBody = util.findChildFromParent(finalCat, "Cat.L");
             finalBody.GetComponent<Renderer>().material = bodyMaterial;
 
-            GameObject finalLeftEye = findChildFromParent(finalCat, "Cat.L_Eye.L");
+            GameObject finalLeftEye = util.findChildFromParent(finalCat, "Cat.L_Eye.L");
             finalLeftEye.GetComponent<Renderer>().material = leftEyeMaterial;
 
-            GameObject finalRightEye = findChildFromParent(finalCat, "Cat.L_Eye.R");
+            GameObject finalRightEye = util.findChildFromParent(finalCat, "Cat.L_Eye.R");
             finalRightEye.GetComponent<Renderer>().material = rightEyeMaterial;
 
             finalCat.transform.localScale = collisionObject.transform.localScale;
@@ -93,23 +87,6 @@ public class UserTableScript : MonoBehaviour
         if (points == 8) {
             Debug.Log("Victory!");
         }
-
-    }
-
-    private GameObject findChildFromParent(GameObject parent, string name)
-    {
-
-        Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
-
-        foreach (Transform t in trs)
-        {
-            if (t.name.Equals(name))
-            {
-                return t.gameObject;
-            }
-        }
-
-        return null;
 
     }
 
