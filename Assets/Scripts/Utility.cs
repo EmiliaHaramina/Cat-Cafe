@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Utility
+public static class Utility
 {
+    private static string sound = "soundOn";
+    private static string movement = "teleportation";
 
-    private bool sound = false;
-    private string movement = "teleportation";
-
-    public GameObject findChildFromParent(GameObject parent, string name)
+    public static GameObject FindChildFromParent(GameObject parent, string name)
     {
         Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
 
@@ -23,12 +22,60 @@ public class Utility
         return null;
     }
 
-    public bool changeSound() {
-
+    public static string GetSound() {
+        return sound;
     }
 
-    public string changeMovement() {
+    public static string GetMovement() {
+        return movement;
+    }
 
+    public static string InitializeSound() {
+        if (PlayerPrefs.HasKey("sound")) {
+            sound = PlayerPrefs.GetString("sound");
+        } else {
+            PlayerPrefs.SetString("sound", "soundOn");
+        }
+
+        return sound;
+    }
+
+    public static string InitializeMovement() {
+        if (PlayerPrefs.HasKey("movement")) {
+            movement = PlayerPrefs.GetString("movement");
+        } else {
+            PlayerPrefs.SetString("movement", "teleportation");
+        }
+
+        return movement;
+    }
+
+    public static string ChangeSound() {
+        string newSound = null;
+
+        if (sound.Equals("soundOn")) {
+            newSound = "soundOff";
+        } else {
+            newSound = "soundOn";
+        }
+
+        sound = newSound;
+        PlayerPrefs.SetString("sound", newSound);
+        return newSound;
+    }
+
+    public static string ChangeMovement() {
+        string newMovement = null;
+
+        if (movement.Equals("teleportation")) {
+            newMovement = "continuous";
+        } else {
+            newMovement = "teleportation";
+        }
+
+        movement = newMovement;
+        PlayerPrefs.SetString("movement", newMovement);
+        return newMovement;
     }
 
 }

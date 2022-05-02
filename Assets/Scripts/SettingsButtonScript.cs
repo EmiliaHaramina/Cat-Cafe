@@ -5,19 +5,20 @@ using UnityEngine;
 public class SettingsButtonScript : MonoBehaviour
 {
     public GameObject mainMenu;
-    public Utility util;
-
-    void Start()
-    {
-        util = new Utility();
-    }
 
     public void OpenSettings() {
-        GameObject main = util.findChildFromParent(mainMenu, "Main");
+        GameObject main = Utility.FindChildFromParent(mainMenu, "Main");
         main.SetActive(false);
 
-        GameObject settings = util.findChildFromParent(mainMenu, "Settings");
+        GameObject settings = Utility.FindChildFromParent(mainMenu, "Settings");
         settings.SetActive(true);
+    }
 
+    public void CloseSettings() {
+        GameObject main = Utility.FindChildFromParent(mainMenu, "Main");
+        main.SetActive(true);
+
+        GameObject settings = Utility.FindChildFromParent(mainMenu, "Settings");
+        settings.SetActive(false);
     }
 }
