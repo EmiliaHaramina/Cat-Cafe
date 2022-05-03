@@ -6,7 +6,7 @@ using Random = System.Random;
 
 public class UserTableScript : MonoBehaviour {
 
-    public int points = 0;
+    private int points = 0;
     public List<string> cats = new List<string>();
     public int numberOfCats = 8;
     public int rangeOfCats = 125;
@@ -14,7 +14,15 @@ public class UserTableScript : MonoBehaviour {
     private List<GameObject> catObjects = new List<GameObject>();
 
     public GameObject GetRandomCat() {
-        return catObjects[r.Next(0, numberOfCats - 1)];
+        return catObjects[r.Next(0, catObjects.Count)];
+    }
+
+    public bool IsVictory() {
+        return points == numberOfCats;
+    }
+
+    public int GetPoints() {
+        return points;
     }
 
     void Start() {
@@ -83,10 +91,10 @@ public class UserTableScript : MonoBehaviour {
             finalCat.SetActive(true);
 
             catObjects.Remove(collisionObject);
-            catObjects.Add(finalCat);
+            // catObjects.Add(finalCat);
         }
 
-        if (points == 8) {
+        if (points == numberOfCats) {
             Debug.Log("Victory!");
         }
 
