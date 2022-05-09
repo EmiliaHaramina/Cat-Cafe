@@ -2532,7 +2532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CATch Caf\xE9"
+  m_text: CATch Cafe
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2541,15 +2541,15 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282487500
-  m_fontColor: {r: 0.8, g: 0.57167464, b: 0.25490195, a: 1}
+    rgba: 4293697516
+  m_fontColor: {r: 0.9245283, g: 0.6236205, b: 0.9245283, a: 1}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 0.4339623, g: 0.13305448, b: 0.13305448, a: 1}
-    topRight: {r: 0.764151, g: 0.46283513, b: 0.19103774, a: 1}
+    topLeft: {r: 0.31132078, g: 0.13363297, b: 0.27455774, a: 1}
+    topRight: {r: 0.7924528, g: 0.35510856, b: 0.675628, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 0.9866427, b: 0, a: 1}
+    bottomRight: {r: 1, g: 0.7688679, b: 0.96909285, a: 1}
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
