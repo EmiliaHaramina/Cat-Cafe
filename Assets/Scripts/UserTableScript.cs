@@ -34,14 +34,13 @@ public class UserTableScript : MonoBehaviour {
     }
 
     public void InitializeCats() {
-        Debug.Log("Number of cats: " + GameVariables.GetCatObjects().Count);
+        var hash = PhotonNetwork.LocalPlayer.CustomProperties;
 
         List<int> randomNumbers = new List<int>();
 
         GameObject catParent = GameObject.Find("Cats");
 
-        while (randomNumbers.Count < numberOfCats)
-        {
+        while (randomNumbers.Count < numberOfCats) {
             int rInt = r.Next(1, rangeOfCats);
             Debug.Log(rInt);
 
@@ -56,10 +55,12 @@ public class UserTableScript : MonoBehaviour {
 
                 catObjects.Add(cat);
                 GameVariables.AddCat(cat);
+                hash.Add("Cat" + catObjects.Count, catName);
             }
         }
 
-        Debug.Log("Number of cats: " + GameVariables.GetCatObjects().Count);
+        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+
     }
 
     void OnCollisionEnter(Collision collision) {

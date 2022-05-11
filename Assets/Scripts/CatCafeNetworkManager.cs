@@ -14,13 +14,23 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
             userTable.GetComponent<UserTableScript>().InitializeCats();
-            Debug.Log("Initialized cats because two players joined.");
+            Debug.Log("Initialized cats because both players joined.");
+        } else {
+            Debug.Log("You are the first player to join.");
         }
     }
 
     public override void OnPlayerEnteredRoom(Player newPlayer) {
         Debug.Log("A new player joined the room.");
         base.OnPlayerEnteredRoom(newPlayer);
+
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
+            if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Cat1")) {
+                Debug.Log("I contain Cat1!");
+            } else {
+                Debug.Log("I don't containt Cat1!");
+            }
+        }
     }
 
 }

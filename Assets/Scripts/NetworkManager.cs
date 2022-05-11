@@ -39,7 +39,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks {
         DefaultRoom roomSettings = defaultRooms[defaultRoomIndex];
 
         //LOAD SCENE
-        PhotonNetwork.AutomaticallySyncScene = true;
+        //PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.LoadLevel(roomSettings.sceneIndex);
 
         // CREATE THE ROOM
