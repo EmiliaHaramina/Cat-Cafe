@@ -5,7 +5,7 @@ using UnityEngine;
 public static class GameVariables {
 
     private static List<GameObject> catObjects = new List<GameObject>();
-    private bool gameStarted = false;
+    private static bool gameStarted = false;
 
     public static List<GameObject> GetCatObjects() {
         return catObjects;

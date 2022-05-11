@@ -95,7 +95,7 @@ public class UserTableScript : MonoBehaviour {
             finalCat.SetActive(true);
 
             catObjects.Remove(collisionObject);
-            GameVariables.Remove(collisionObject);
+            GameVariables.RemoveCat(collisionObject);
             // catObjects.Add(finalCat);
         }
 
