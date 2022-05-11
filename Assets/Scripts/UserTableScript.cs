@@ -48,6 +48,7 @@ public class UserTableScript : MonoBehaviour {
                 cat.SetActive(true);
 
                 catObjects.Add(cat);
+                GameVariables.AddCat(cat);
             }
         }
 
@@ -94,6 +95,7 @@ public class UserTableScript : MonoBehaviour {
             finalCat.SetActive(true);
 
             catObjects.Remove(collisionObject);
+            GameVariables.Remove(collisionObject);
             // catObjects.Add(finalCat);
         }
 
