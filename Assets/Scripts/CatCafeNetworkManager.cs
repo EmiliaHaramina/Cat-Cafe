@@ -13,6 +13,10 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         base.OnJoinedRoom();
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
+            if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("Cat1")) {
+                Debug.Log("Cat1 already exists!");
+                return;
+            }
             userTable.GetComponent<UserTableScript>().InitializeCats();
             Debug.Log("Initialized cats because both players joined.");
         } else {

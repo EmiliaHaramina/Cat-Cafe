@@ -59,8 +59,9 @@ public class UserTableScript : MonoBehaviour {
             }
         }
 
-        PhotonNetwork.LocalPlayer.SetCustomProperties(hash);
+        PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
 
+        Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
     }
 
     void OnCollisionEnter(Collision collision) {
@@ -105,11 +106,17 @@ public class UserTableScript : MonoBehaviour {
 
             catObjects.Remove(collisionObject);
             GameVariables.RemoveCat(collisionObject);
+
+            var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+            hash.Remove(name);
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
         }
 
         if (points == numberOfCats) {
             Debug.Log("Victory!");
         }
+
+        Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
 
     }
 
