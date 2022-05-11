@@ -14,6 +14,7 @@ public class UserTableScript : MonoBehaviour {
     public int rangeOfCats = 125;
     private Random r = new Random();
     private List<GameObject> catObjects = new List<GameObject>();
+    private bool gameStarted = false;
 
     public GameObject GetRandomCat() {
         return catObjects[r.Next(0, catObjects.Count)];
@@ -25,6 +26,28 @@ public class UserTableScript : MonoBehaviour {
 
     public int GetPoints() {
         return points;
+    }
+
+    public bool IsGameStarted() {
+        return gameStarted;
+    }
+
+    void Update() {
+
+        if (gameStarted) {
+            return;
+        }
+
+        if (cats.Count != 0) {
+            Debug.Log("First player");
+            gameStarted = true;
+        }
+
+        if (PhotonNetwork.CurrentRoom.CustomProperties.Count == 8) {
+            ShowCatsForOtherPlayer();
+            Debug.Log("8 cats!");
+            gameStarted = true;
+        }
     }
 
     public void InitializeCats() {
