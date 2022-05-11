@@ -19,7 +19,7 @@ public class Meowing : MonoBehaviour {
 
         if (!gameStarted) {
             if (PhotonNetwork.CurrentRoom.CustomProperties.Count == 8) {
-
+                userTable.GetComponent<UserTableScript>().ShowCatsForOtherPlayer();
                 Debug.Log("8 cats!");
                 gameStarted = true;
             } else {

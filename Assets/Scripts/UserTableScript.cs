@@ -58,6 +58,20 @@ public class UserTableScript : MonoBehaviour {
         Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
     }
 
+    public void ShowCatsForOtherPlayer() {
+        var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+
+        GameObject catParent = GameObject.Find("Cats");
+
+        foreach (String catName in hash.Keys) {
+            GameObject cat = Utility.FindChildFromParent(catParent, catName);
+            cat.SetActive(true);
+
+            catObjects.Add(cat);
+            GameVariables.AddCat(cat);
+        }
+    }
+
     void OnCollisionEnter(Collision collision) {
         GameObject collisionObject = collision.gameObject;
         string name = collisionObject.name;
