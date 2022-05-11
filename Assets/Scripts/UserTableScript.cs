@@ -27,12 +27,6 @@ public class UserTableScript : MonoBehaviour {
         return points;
     }
 
-    void Start() {
-
-        
-
-    }
-
     public void InitializeCats() {
         var hash = PhotonNetwork.CurrentRoom.CustomProperties;
 
@@ -55,7 +49,7 @@ public class UserTableScript : MonoBehaviour {
 
                 catObjects.Add(cat);
                 GameVariables.AddCat(cat);
-                hash.Add(catName, "Cat" + catObjects.Count);
+                hash.Add(catName, "HashCat" + catObjects.Count);
             }
         }
 
@@ -110,8 +104,6 @@ public class UserTableScript : MonoBehaviour {
             var hash = PhotonNetwork.CurrentRoom.CustomProperties;
             hash.Remove(name);
             PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
-
-            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
 
         if (points == numberOfCats) {

@@ -13,8 +13,19 @@ public class Meowing : MonoBehaviour {
     private double timer = 0;
     public List<AudioClip> audioClips;
     Random r = new Random();
+    private bool gameStarted = false;
 
     void Update() {
+
+        if (!gameStarted) {
+            if (PhotonNetwork.CurrentRoom.CustomProperties.Count == 8) {
+
+                Debug.Log("8 cats!");
+                gameStarted = true;
+            } else {
+                return;
+            }
+        }
 
         if (userTable.GetComponent<UserTableScript>().IsVictory() || PlayerPrefs.GetString("sound").Equals("soundOff")) {
             return;
@@ -24,6 +35,7 @@ public class Meowing : MonoBehaviour {
         double secondsBetweenMeows = startingSecondsBetweenMeows + Math.Pow(userTable.GetComponent<UserTableScript>().GetPoints(), 2) / 2.0;
         
         if (timer >= secondsBetweenMeows) {
+
             timer -= secondsBetweenMeows;
             //Debug.Log(secondsBetweenMeows + " seconds");
 
