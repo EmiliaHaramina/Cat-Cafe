@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Random = System.Random;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class Meowing : MonoBehaviour {
 
@@ -32,6 +34,8 @@ public class Meowing : MonoBehaviour {
             //Debug.Log(next);
             randomCat.GetComponent<AudioSource>().clip = audioClips[next];
             randomCat.GetComponent<AudioSource>().Play();
+
+            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
     }
 }

@@ -55,7 +55,7 @@ public class UserTableScript : MonoBehaviour {
 
                 catObjects.Add(cat);
                 GameVariables.AddCat(cat);
-                hash.Add("Cat" + catObjects.Count, catName);
+                hash.Add(catName, "Cat" + catObjects.Count);
             }
         }
 
@@ -110,6 +110,8 @@ public class UserTableScript : MonoBehaviour {
             var hash = PhotonNetwork.CurrentRoom.CustomProperties;
             hash.Remove(name);
             PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+
+            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
 
         if (points == numberOfCats) {
