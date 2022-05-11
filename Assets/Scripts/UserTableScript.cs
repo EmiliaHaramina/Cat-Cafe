@@ -26,6 +26,9 @@ public class UserTableScript : MonoBehaviour {
     }
 
     void Start() {
+
+        Debug.Log("Number of cats: " + GameVariables.GetCatObjects().Count);
+
         List<int> randomNumbers = new List<int>();
 
         GameObject catParent = GameObject.Find("Cats");
