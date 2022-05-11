@@ -34,7 +34,7 @@ public class UserTableScript : MonoBehaviour {
     }
 
     public void InitializeCats() {
-        var hash = PhotonNetwork.LocalPlayer.CustomProperties;
+        var hash = PhotonNetwork.CurrentRoom.CustomProperties;
 
         List<int> randomNumbers = new List<int>();
 

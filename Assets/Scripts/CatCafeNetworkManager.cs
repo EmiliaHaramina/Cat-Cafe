@@ -25,11 +25,13 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         base.OnPlayerEnteredRoom(newPlayer);
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
-            if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Cat1")) {
+            if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("Cat1")) {
                 Debug.Log("I contain Cat1!");
             } else {
-                Debug.Log("I don't containt Cat1!");
+                Debug.Log("I don't contain Cat1!");
             }
+
+            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
     }
 
