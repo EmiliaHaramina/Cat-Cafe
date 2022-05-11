@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Random = System.Random;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class UserTableScript : MonoBehaviour {
 
@@ -27,6 +29,11 @@ public class UserTableScript : MonoBehaviour {
 
     void Start() {
 
+        
+
+    }
+
+    public void InitializeCats() {
         Debug.Log("Number of cats: " + GameVariables.GetCatObjects().Count);
 
         List<int> randomNumbers = new List<int>();
@@ -52,6 +59,7 @@ public class UserTableScript : MonoBehaviour {
             }
         }
 
+        Debug.Log("Number of cats: " + GameVariables.GetCatObjects().Count);
     }
 
     void OnCollisionEnter(Collision collision) {
@@ -96,7 +104,6 @@ public class UserTableScript : MonoBehaviour {
 
             catObjects.Remove(collisionObject);
             GameVariables.RemoveCat(collisionObject);
-            // catObjects.Add(finalCat);
         }
 
         if (points == numberOfCats) {
