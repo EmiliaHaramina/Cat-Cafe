@@ -102,9 +102,11 @@ public class UserTableScript : MonoBehaviour {
 
         if (name.StartsWith("Cat") && !name.StartsWith("CatF") && !cats.Contains(name)) {
             cats.Add(name);
-            if (points < 8) {
+            if (points < numberOfCats) {
                 if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                     points++;
+                } else {
+
                 }
             }
 

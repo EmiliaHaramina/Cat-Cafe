@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 
 public class CatGrabAnimation : MonoBehaviour {
 
@@ -11,6 +13,8 @@ public class CatGrabAnimation : MonoBehaviour {
     public void OnGrabAnimation() {
         catAnimator.runtimeAnimatorController = grabAnimatorController;
         catAnimator.Play("Entry");
+
+        // TODO: Using PhotonNetwork.LocalPlayer maybe i can store "CatXGrab" - "Player" in RoomProperties and then in collision check who grabbed the cat last
     }
 
     public void OnLetGoAnimation() {
