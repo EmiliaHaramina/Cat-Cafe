@@ -43,7 +43,7 @@ public class UserTableScript : MonoBehaviour {
             gameStarted = true;
         }
 
-        if (PhotonNetwork.CurrentRoom.CustomProperties.Count == 8) {
+        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == 8) {
             ShowCatsForOtherPlayer();
             Debug.Log("8 cats!");
             gameStarted = true;
@@ -103,7 +103,9 @@ public class UserTableScript : MonoBehaviour {
         if (name.StartsWith("Cat") && !name.StartsWith("CatF") && !cats.Contains(name)) {
             cats.Add(name);
             if (points < 8) {
-                points++;
+                if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                    points++;
+                }
             }
 
             GameObject body = Utility.FindChildFromParent(collisionObject, "Cat.L");
