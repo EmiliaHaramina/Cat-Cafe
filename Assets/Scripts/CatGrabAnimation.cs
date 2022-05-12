@@ -18,7 +18,7 @@ public class CatGrabAnimation : MonoBehaviour {
         var hash = PhotonNetwork.CurrentRoom.CustomProperties;
 
         hash.Remove(this.name + "Grab");
-        hash.Add(this.name + "Grab", PhotonNetwork.LocalPlayer.ToString());
+        hash.Add(this.name + "Grab", PhotonNetwork.LocalPlayer.ActorNumber);
         PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
     }
 
