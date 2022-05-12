@@ -119,6 +119,8 @@ public class UserTableScript : MonoBehaviour {
                     } else {
                         secondPlayerPoints++;
                     }
+                    Debug.Log("First player points: " + firstPlayerPoints);
+                    Debug.Log("Second player points: " + secondPlayerPoints);
                 }
             }
 
@@ -140,6 +142,7 @@ public class UserTableScript : MonoBehaviour {
             } else {
                 finalCatName = "CatFinal" + firstPlayerPoints + secondPlayerPoints;
             }
+            Debug.Log(finalCatName);
 
             GameObject finalCat = Utility.FindChildFromParent(finalCatParent, finalCatName);
 
