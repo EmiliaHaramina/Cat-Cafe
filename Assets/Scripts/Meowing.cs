@@ -30,7 +30,7 @@ public class Meowing : MonoBehaviour {
         if (timer >= secondsBetweenMeows) {
 
             timer -= secondsBetweenMeows;
-            //Debug.Log(secondsBetweenMeows + " seconds");
+            Debug.Log(secondsBetweenMeows + " seconds");
 
             GameObject randomCat = userTable.GetComponent<UserTableScript>().GetRandomCat();
             //Debug.Log(randomCat);
@@ -40,7 +40,9 @@ public class Meowing : MonoBehaviour {
             randomCat.GetComponent<AudioSource>().clip = audioClips[next];
             randomCat.GetComponent<AudioSource>().Play();
 
-            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
+            if (PhotonNetwork.IsConnected) {
+                Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
+            }
         }
     }
 }

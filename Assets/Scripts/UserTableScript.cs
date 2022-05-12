@@ -5,6 +5,7 @@ using System;
 using Random = System.Random;
 using Photon.Pun;
 using Photon.Realtime;
+using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class UserTableScript : MonoBehaviour {
 
@@ -23,15 +24,22 @@ public class UserTableScript : MonoBehaviour {
     }
 
     public bool IsVictory() {
-        return points == numberOfCats;
-    }
+        return points == numberOfCats || firstPlayerPoints > numberOfCats / 2 || secondPlayerPoints > numberOfCats / 2;
+     }
 
     public int GetPoints() {
-        return points;
+        return points + firstPlayerPoints + secondPlayerPoints;
     }
 
     public bool IsGameStarted() {
         return gameStarted;
+    }
+
+    void Start() {
+        if (!PhotonNetwork.IsConnected) {
+            InitializeCats();
+            gameStarted = true;
+        }
     }
 
     void Update() {
@@ -53,7 +61,10 @@ public class UserTableScript : MonoBehaviour {
     }
 
     public void InitializeCats() {
-        var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+        Hashtable hash = null;
+        if (PhotonNetwork.IsConnected) {
+            hash = PhotonNetwork.CurrentRoom.CustomProperties;
+        }
 
         List<int> randomNumbers = new List<int>();
 
@@ -74,13 +85,17 @@ public class UserTableScript : MonoBehaviour {
 
                 catObjects.Add(cat);
                 GameVariables.AddCat(cat);
-                hash.Add(catName, "HashCat" + catObjects.Count);
+                if (PhotonNetwork.IsConnected) {
+                    hash.Add(catName, "HashCat" + catObjects.Count);
+                }
             }
         }
 
-        PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+        if (PhotonNetwork.IsConnected) {
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
+        }
 
-        Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
     }
 
     public void ShowCatsForOtherPlayer() {
@@ -105,13 +120,11 @@ public class UserTableScript : MonoBehaviour {
         if (name.StartsWith("Cat") && !name.StartsWith("CatF") && !cats.Contains(name)) {
             cats.Add(name);
             if (points < numberOfCats) {
-                if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                     points++;
                 } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
                     var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
 
-                    //string player = (string) hashtable[name + "Grab"];
-                    //Debug.Log(player);
                     int player = (int) hashtable[name + "Grab"];
                     Debug.Log(player);
                     if (player == 1) {
@@ -137,7 +150,7 @@ public class UserTableScript : MonoBehaviour {
 
             GameObject finalCatParent = GameObject.Find("CatsFinalPosition");
             string finalCatName;
-            if (PhotonNetwork.CurrentRoom == null || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+            if (!PhotonNetwork.IsConnected|| PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                 finalCatName = "CatFinal" + points;
             } else {
                 finalCatName = "CatFinal" + (firstPlayerPoints + secondPlayerPoints);
@@ -163,10 +176,12 @@ public class UserTableScript : MonoBehaviour {
             catObjects.Remove(collisionObject);
             GameVariables.RemoveCat(collisionObject);
 
-            var hash = PhotonNetwork.CurrentRoom.CustomProperties;
-            hash.Remove(name);
-            hash.Remove(name + "Grab");
-            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+            if (PhotonNetwork.IsConnected) {
+                var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+                hash.Remove(name);
+                hash.Remove(name + "Grab");
+                PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+            }
         }
 
         if (points == numberOfCats) {
@@ -179,7 +194,9 @@ public class UserTableScript : MonoBehaviour {
             Debug.Log("Second player victory!");
         }
 
-        Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
+        if (PhotonNetwork.IsConnected) {
+            Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
+        }
 
     }
 
