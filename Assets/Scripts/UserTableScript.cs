@@ -112,8 +112,8 @@ public class UserTableScript : MonoBehaviour {
 
                     //string player = (string) hashtable[name + "Grab"];
                     //Debug.Log(player);
-                    Debug.Log(hashtable[name + "Grab"]);
                     string player = (string) hashtable[name + "Grab"];
+                    Debug.Log(player);
                     if (player.Equals("#01 \"")) {
                         firstPlayerPoints++;
                     } else {
@@ -143,6 +143,7 @@ public class UserTableScript : MonoBehaviour {
 
             GameObject finalCat = Utility.FindChildFromParent(finalCatParent, finalCatName);
 
+            Debug.Log(finalCat);
             GameObject finalBody = Utility.FindChildFromParent(finalCat, "Cat.L");
             finalBody.GetComponent<Renderer>().material = bodyMaterial;
 
