@@ -17,6 +17,7 @@ public class CatGrabAnimation : MonoBehaviour {
         // TODO: Using PhotonNetwork.LocalPlayer maybe i can store "CatXGrab" - "Player" in RoomProperties and then in collision check who grabbed the cat last
         var hash = PhotonNetwork.CurrentRoom.CustomProperties;
 
+        hash.Remove(this.name + "Grab");
         hash.Add(this.name + "Grab", PhotonNetwork.LocalPlayer);
         PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
     }
