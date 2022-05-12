@@ -140,7 +140,7 @@ public class UserTableScript : MonoBehaviour {
             if (PhotonNetwork.CurrentRoom == null || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                 finalCatName = "CatFinal" + points;
             } else {
-                finalCatName = "CatFinal" + firstPlayerPoints + secondPlayerPoints;
+                finalCatName = "CatFinal" + (firstPlayerPoints + secondPlayerPoints);
             }
             Debug.Log(finalCatName);
 
