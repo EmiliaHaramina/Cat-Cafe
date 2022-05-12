@@ -113,11 +113,12 @@ public class UserTableScript : MonoBehaviour {
                     //string player = (string) hashtable[name + "Grab"];
                     //Debug.Log(player);
                     Debug.Log(hashtable[name + "Grab"]);
-                    //if (player.Equals("#01 \"")) {
-                    //   firstPlayerPoints++;
-                    //} else {
-                    //  secondPlayerPoints++;
-                    //}
+                    string player = (string) hashtable[name + "Grab"];
+                    if (player.Equals("#01 \"")) {
+                        firstPlayerPoints++;
+                    } else {
+                        secondPlayerPoints++;
+                    }
                 }
             }
 
