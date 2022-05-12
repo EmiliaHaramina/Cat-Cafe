@@ -173,9 +173,9 @@ public class UserTableScript : MonoBehaviour {
             Debug.Log("Victory!");
         }
 
-        if (firstPlayerPoints >= numberOfCats / 2) {
+        if (firstPlayerPoints > numberOfCats / 2) {
             Debug.Log("First player victory!");
-        } else {
+        } else if (secondPlayerPoints > numberOfCats / 2) {
             Debug.Log("Second player victory!");
         }
 
