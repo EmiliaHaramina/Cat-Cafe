@@ -7,10 +7,7 @@ public static class Utility
     private static string sound = "soundOn";
     private static string movement = "teleportation";
 
-    public static GameObject FindChildFromParent(GameObject parent, string name)
-    {
-        Debug.Log(parent);
-        Debug.Log(name);
+    public static GameObject FindChildFromParent(GameObject parent, string name) {
         Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
 
         foreach (Transform t in trs)
