@@ -114,9 +114,9 @@ public class UserTableScript : MonoBehaviour {
                     //Debug.Log(player);
                     Debug.Log(hashtable[name + "Grab"]);
                     //if (player.Equals("#01 \"")) {
-                     //   firstPlayerPoints++;
+                    //   firstPlayerPoints++;
                     //} else {
-                      //  secondPlayerPoints++;
+                    //  secondPlayerPoints++;
                     //}
                 }
             }
@@ -133,7 +133,12 @@ public class UserTableScript : MonoBehaviour {
             collisionObject.SetActive(false);
 
             GameObject finalCatParent = GameObject.Find("CatsFinalPosition");
-            string finalCatName = "CatFinal" + points;
+            string finalCatName;
+            if (PhotonNetwork.CurrentRoom == null || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                finalCatName = "CatFinal" + points;
+            } else {
+                finalCatName = "CatFinal" + firstPlayerPoints + secondPlayerPoints;
+            }
 
             GameObject finalCat = Utility.FindChildFromParent(finalCatParent, finalCatName);
 

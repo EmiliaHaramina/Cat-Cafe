@@ -9,6 +9,8 @@ public static class Utility
 
     public static GameObject FindChildFromParent(GameObject parent, string name)
     {
+        Debug.Log(parent);
+        Debug.Log(name);
         Transform[] trs = parent.GetComponentsInChildren<Transform>(true);
 
         foreach (Transform t in trs)
