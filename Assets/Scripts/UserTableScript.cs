@@ -15,6 +15,8 @@ public class UserTableScript : MonoBehaviour {
     private Random r = new Random();
     private List<GameObject> catObjects = new List<GameObject>();
     private bool gameStarted = false;
+    private int firstPlayerPoints = 0;
+    private int secondPlayerPoints = 0;
 
     public GameObject GetRandomCat() {
         return catObjects[r.Next(0, catObjects.Count)];
@@ -105,8 +107,16 @@ public class UserTableScript : MonoBehaviour {
             if (points < numberOfCats) {
                 if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                     points++;
-                } else {
+                } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
+                    var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
 
+                    string player = (string) hashtable[name + "Grab"];
+                    Debug.Log(player);
+                    if (player.Equals("#01 \"")) {
+                        firstPlayerPoints++;
+                    } else {
+                        secondPlayerPoints++;
+                    }
                 }
             }
 
@@ -144,11 +154,18 @@ public class UserTableScript : MonoBehaviour {
 
             var hash = PhotonNetwork.CurrentRoom.CustomProperties;
             hash.Remove(name);
+            hash.Remove(name + "Grab");
             PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
         }
 
         if (points == numberOfCats) {
             Debug.Log("Victory!");
+        }
+
+        if (firstPlayerPoints >= numberOfCats / 2) {
+            Debug.Log("First player victory!");
+        } else {
+            Debug.Log("Second player victory!");
         }
 
         Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
