@@ -30,15 +30,6 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         base.OnPlayerEnteredRoom(newPlayer);
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
-            //while (1 == 1) {
-            //    Debug.Log("I don't contain 8 entries!");
-             //   int count = PhotonNetwork.CurrentRoom.CustomProperties.Count;
-             //   if (count == 8) {
-             //       break;
-             //   }
-            //}
-
-            //Debug.Log("I contain 8 entries!");
 
             Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }

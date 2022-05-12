@@ -43,7 +43,7 @@ public class UserTableScript : MonoBehaviour {
             gameStarted = true;
         }
 
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == 8) {
+        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == numberOfCats) {
             ShowCatsForOtherPlayer();
             Debug.Log("8 cats!");
             gameStarted = true;
