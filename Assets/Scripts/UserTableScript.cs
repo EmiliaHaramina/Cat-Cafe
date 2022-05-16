@@ -20,8 +20,7 @@ public class UserTableScript : MonoBehaviour {
     private int secondPlayerPoints = 0;
 
     public GameObject guide;
-    private float guidePositionX;
-    private float guidePositionZ;
+    private Vector3 guidePosition;
     private Quaternion guideRotation;
 
     public RuntimeAnimatorController talkingAnimatorController;
@@ -33,6 +32,15 @@ public class UserTableScript : MonoBehaviour {
     public double timeForPoint = 5;
     private bool gotPoint = false;
     private double pointTimer = 0;
+
+    public GameObject welcomeCoop;
+    public GameObject welcomeVs;
+    public GameObject pointsCoop;
+    public GameObject pointsVs;
+    public GameObject victoryCoop;
+    public GameObject victoryVs;
+
+    public bool coop;
 
     public GameObject GetRandomCat() {
         return catObjects[r.Next(0, catObjects.Count)];
@@ -52,8 +60,7 @@ public class UserTableScript : MonoBehaviour {
 
     void Start() {
 
-        guidePositionX = guide.transform.position.x;
-        guidePositionZ = guide.transform.position.z;
+        guidePosition = guide.transform.position;
         guideRotation = guide.transform.rotation;
 
         guideAnimator = guide.GetComponent<Animator>();
@@ -79,8 +86,7 @@ public class UserTableScript : MonoBehaviour {
             }
         }
 
-        guide.transform.position = new Vector3(guidePositionX, guide.transform.position.y, guidePositionZ);
-        guide.transform.rotation = guideRotation;
+        guide.transform.position = guidePosition;
 
         if (gameStarted) {
             return;
@@ -225,6 +231,7 @@ public class UserTableScript : MonoBehaviour {
             }
 
             if (!IsVictory()) {
+                guide.transform.rotation = guideRotation;
                 guideAnimator.runtimeAnimatorController = pointAnimatorController;
                 gotPoint = true;
                 pointTimer = 0;
