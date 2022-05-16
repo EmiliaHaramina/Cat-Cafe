@@ -19,6 +19,21 @@ public class UserTableScript : MonoBehaviour {
     private int firstPlayerPoints = 0;
     private int secondPlayerPoints = 0;
 
+    public GameObject guide;
+    private float guidePositionX;
+    private float guidePositionZ;
+    private Quaternion guideRotation;
+
+    public RuntimeAnimatorController talkingAnimatorController;
+    public RuntimeAnimatorController idleAnimatorController;
+    public RuntimeAnimatorController pointAnimatorController;
+    public RuntimeAnimatorController victoryAnimatorController;
+    private Animator guideAnimator;
+
+    public double timeForPoint = 5;
+    private bool gotPoint = false;
+    private double pointTimer = 0;
+
     public GameObject GetRandomCat() {
         return catObjects[r.Next(0, catObjects.Count)];
     }
@@ -36,6 +51,14 @@ public class UserTableScript : MonoBehaviour {
     }
 
     void Start() {
+
+        guidePositionX = guide.transform.position.x;
+        guidePositionZ = guide.transform.position.z;
+        guideRotation = guide.transform.rotation;
+
+        guideAnimator = guide.GetComponent<Animator>();
+        guideAnimator.runtimeAnimatorController = talkingAnimatorController;
+
         if (!PhotonNetwork.IsConnected) {
             InitializeCats();
             gameStarted = true;
@@ -43,6 +66,21 @@ public class UserTableScript : MonoBehaviour {
     }
 
     void Update() {
+
+        if (gotPoint) {
+            pointTimer += Time.deltaTime;
+            Debug.Log("Point timer: " + pointTimer);
+            Debug.Log("Time for point: " + timeForPoint);
+
+            if (pointTimer >= timeForPoint) {
+                gotPoint = false;
+                pointTimer = 0;
+                guideAnimator.runtimeAnimatorController = idleAnimatorController;
+            }
+        }
+
+        guide.transform.position = new Vector3(guidePositionX, guide.transform.position.y, guidePositionZ);
+        guide.transform.rotation = guideRotation;
 
         if (gameStarted) {
             return;
@@ -96,6 +134,7 @@ public class UserTableScript : MonoBehaviour {
             Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
 
+        guideAnimator.runtimeAnimatorController = idleAnimatorController;
     }
 
     public void ShowCatsForOtherPlayer() {
@@ -110,6 +149,8 @@ public class UserTableScript : MonoBehaviour {
             catObjects.Add(cat);
             GameVariables.AddCat(cat);
         }
+
+        guideAnimator.runtimeAnimatorController = idleAnimatorController;
     }
 
     void OnCollisionEnter(Collision collision) {
@@ -182,16 +223,25 @@ public class UserTableScript : MonoBehaviour {
                 hash.Remove(name + "Grab");
                 PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
             }
+
+            if (!IsVictory()) {
+                guideAnimator.runtimeAnimatorController = pointAnimatorController;
+                gotPoint = true;
+                pointTimer = 0;
+            }
         }
 
         if (points == numberOfCats) {
             Debug.Log("Victory!");
+            guideAnimator.runtimeAnimatorController = victoryAnimatorController;
         }
 
         if (firstPlayerPoints > numberOfCats / 2) {
             Debug.Log("First player victory!");
+            guideAnimator.runtimeAnimatorController = victoryAnimatorController;
         } else if (secondPlayerPoints > numberOfCats / 2) {
             Debug.Log("Second player victory!");
+            guideAnimator.runtimeAnimatorController = victoryAnimatorController;
         }
 
         if (PhotonNetwork.IsConnected) {
