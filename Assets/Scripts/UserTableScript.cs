@@ -62,6 +62,10 @@ public class UserTableScript : MonoBehaviour {
 
     void Start() {
 
+        if (numberOfCats == 0) {
+            numberOfCats = 1;
+        }
+
         guidePosition = guide.transform.position;
         guideRotation = guide.transform.rotation;
 
@@ -70,8 +74,6 @@ public class UserTableScript : MonoBehaviour {
 
         if (!PhotonNetwork.IsConnected) {
             GuideInit();
-            //InitializeCats();
-            //gameStarted = true;
         }
     }
 
@@ -310,16 +312,59 @@ public class UserTableScript : MonoBehaviour {
         }
 
         if (points == numberOfCats) {
-            Debug.Log("Victory!");
             guideAnimator.runtimeAnimatorController = victoryAnimatorController;
+
+            pointsCoop.SetActive(false);
+            victoryCoop.SetActive(true);
+
+            GameObject victoryText = Utility.FindChildFromParent(victoryCoop, "VictoryCoopText");
+            if (points == 1) {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Thank you! You found our cat!";
+            } else {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Thank you! You found all " + points + " of our cats!";
+            }
         }
 
         if (firstPlayerPoints > numberOfCats / 2) {
-            Debug.Log("First player victory!");
             guideAnimator.runtimeAnimatorController = victoryAnimatorController;
+
+            pointsVs.SetActive(false);
+            victoryVs.SetActive(true);
+
+            GameObject victoryText = Utility.FindChildFromParent(victoryVs, "VictoryVsText");
+            if (firstPlayerPoints == 1) {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cat!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
+            } else if (secondPlayerPoints == 1) {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cat!";
+            } else {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
+            }
         } else if (secondPlayerPoints > numberOfCats / 2) {
-            Debug.Log("Second player victory!");
             guideAnimator.runtimeAnimatorController = victoryAnimatorController;
+
+            pointsVs.SetActive(false);
+            victoryVs.SetActive(true);
+
+            GameObject victoryText = Utility.FindChildFromParent(victoryVs, "VictoryVsText");
+            if (firstPlayerPoints == 1) {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 2 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cat!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
+            } else if (secondPlayerPoints == 1) {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 2 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cat!";
+            } else {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 2 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
+            }
+        } else if (firstPlayerPoints + secondPlayerPoints == numberOfCats) {
+            guideAnimator.runtimeAnimatorController = victoryAnimatorController;
+
+            pointsVs.SetActive(false);
+            victoryVs.SetActive(true);
+
+            GameObject victoryText = Utility.FindChildFromParent(victoryVs, "VictoryVsText");
+            if (firstPlayerPoints == 1) {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "It's a draw, I guess you have to sit together!\n\n\nBoth players found " + firstPlayerPoints + " cat!";
+            } else {
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "It's a draw, I guess you have to sit together!\n\n\nBoth players found " + firstPlayerPoints + " cats!";
+            }
         }
 
         if (PhotonNetwork.IsConnected) {
