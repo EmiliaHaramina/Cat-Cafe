@@ -36,12 +36,13 @@ public class UserTableScript : MonoBehaviour {
     public GameObject welcomeSingleplayer;
     public GameObject welcomeCoop;
     public GameObject welcomeVs;
+    public GameObject waiting;
     public GameObject pointsCoop;
     public GameObject pointsVs;
     public GameObject victoryCoop;
     public GameObject victoryVs;
 
-    public bool coop;
+    public bool multiplayerInit = false;
 
     public GameObject GetRandomCat() {
         return catObjects[r.Next(0, catObjects.Count)];
@@ -92,27 +93,67 @@ public class UserTableScript : MonoBehaviour {
             return;
         }
 
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == 0) {
-            GuideInit();
+        //if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == 0) {
+        //    GuideInit();
+        //}
+
+        if (multiplayerInit && PhotonNetwork.CurrentRoom != null) {
+            Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
+            Debug.Log("Before: " + hash);
+            if (PhotonNetwork.CurrentRoom.Name.Equals("Coop") && hash.Count == 0) {
+                welcomeCoop.SetActive(false);
+                waiting.SetActive(true);
+                hash.Add("firstPlayer", "ready");
+            } else if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                welcomeCoop.SetActive(false);
+                pointsCoop.SetActive(true);
+                InitializeCats();
+                gameStarted = true;
+                hash.Remove("firstPlayer");
+                hash.Add("secondPlayer", "ready");
+            } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs") && hash.Count == 0) {
+                welcomeVs.SetActive(false);
+                waiting.SetActive(true);
+                hash.Add("firstPlayer", "ready");
+            } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
+                welcomeVs.SetActive(false);
+                pointsVs.SetActive(true);
+                InitializeCats();
+                gameStarted = true;
+                hash.Remove("firstPlayer");
+                hash.Add("secondPlayer", "ready");
+            }
+
+            multiplayerInit = false;
+            Debug.Log("After: " + hash);
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
         }
 
-        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == numberOfCats) {
-            SecondPlayerInit();
-            Debug.Log("8 cats!");
+        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("secondPlayer")) {
+            ShowCatsForOtherPlayer();
+            gameStarted = true;
+
+            Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
+            hash.Remove("secondPlayer");
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+        }
+
+        //if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == numberOfCats) {
+           //SecondPlayerInit();
+            //Debug.Log("8 cats!");
             //gameStarted = true;
-        }
+        //}
     }
 
-    public void FirstPlayerInit() {
-        GuideInit();
-
-        //InitializeCats();
+    public void SingleplayerInit() {
+        InitializeCats();
+        gameStarted = true;
+        welcomeSingleplayer.SetActive(false);
+        pointsCoop.SetActive(true);
     }
 
-    public void SecondPlayerInit() {
-        GuideInit();
-
-        //ShowCatsForOtherPlayer();
+    public void MultiplayerInit() {
+        multiplayerInit = true;
     }
 
     public void GuideInit() {

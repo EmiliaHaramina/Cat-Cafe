@@ -11,6 +11,7 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
     public override void OnJoinedRoom() {
         Debug.Log("Joined a room.");
         base.OnJoinedRoom();
+        userTable.GetComponent<UserTableScript>().GuideInit();
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
             Debug.Log("Initialized cats because both players joined.");
