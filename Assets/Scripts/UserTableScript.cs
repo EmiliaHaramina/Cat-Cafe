@@ -91,15 +91,14 @@ public class UserTableScript : MonoBehaviour {
             return;
         }
 
-        if (cats.Count != 0) {
-            Debug.Log("First player");
-            gameStarted = true;
+        if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == 0) {
+            GuideInit();
         }
 
         if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == numberOfCats) {
             SecondPlayerInit();
             Debug.Log("8 cats!");
-            gameStarted = true;
+            //gameStarted = true;
         }
     }
 

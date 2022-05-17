@@ -13,7 +13,6 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         base.OnJoinedRoom();
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
-            userTable.GetComponent<UserTableScript>().GuideInit();
             Debug.Log("Initialized cats because both players joined.");
         } else {
             Debug.Log("You are the first player to join.");
@@ -24,7 +23,6 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         Debug.Log("A new player joined the room.");
         base.OnPlayerEnteredRoom(newPlayer);
 
-        userTable.GetComponent<UserTableScript>().GuideInit();
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
             Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
