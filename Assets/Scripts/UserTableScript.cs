@@ -206,10 +206,14 @@ public class UserTableScript : MonoBehaviour {
 
     public void ShowCatsForOtherPlayer() {
         var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+        Debug.Log(hash);
 
         GameObject catParent = GameObject.Find("Cats");
 
         foreach (String catName in hash.Keys) {
+            if (!catName.StartsWith("Cat")) {
+                continue;
+            }
             GameObject cat = Utility.FindChildFromParent(catParent, catName);
             cat.SetActive(true);
 
