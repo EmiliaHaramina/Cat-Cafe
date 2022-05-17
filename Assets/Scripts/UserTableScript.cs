@@ -45,6 +45,8 @@ public class UserTableScript : MonoBehaviour {
 
     public bool multiplayerInit = false;
 
+    private List<string> catNames = new List<string>();
+
     public GameObject GetRandomCat() {
         return catObjects[r.Next(0, catObjects.Count)];
     }
@@ -91,6 +93,23 @@ public class UserTableScript : MonoBehaviour {
         }
 
         guide.transform.position = guidePosition;
+
+        if (PhotonNetwork.CurrentRoom != null) {
+            Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
+
+            foreach (String catName in catNames) {
+                if (!hash.ContainsKey(catName)) {
+                    GameObject cats = GameObject.Find("Cats");
+                    CatCollision(Utility.FindChildFromParent(cats, catName));
+                    if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                        UpdatePoints();
+                    } else {
+                        UpdateBothPlayerPoints();
+                    }
+                    CheckVictory();
+                }
+            }
+        }
 
         if (gameStarted) {
             return;
@@ -171,6 +190,9 @@ public class UserTableScript : MonoBehaviour {
         Hashtable hash = null;
         if (PhotonNetwork.IsConnected) {
             hash = PhotonNetwork.CurrentRoom.CustomProperties;
+            hash.Add("firstPlayerPoints", 0);
+            hash.Add("secondPlayerPoint", 0);
+            hash.Add("points", 0);
         }
 
         List<int> randomNumbers = new List<int>();
@@ -190,6 +212,7 @@ public class UserTableScript : MonoBehaviour {
 
                 catObjects.Add(cat);
                 if (PhotonNetwork.IsConnected) {
+                    catNames.Add(catName);
                     hash.Add(catName, "HashCat" + catObjects.Count);
                 }
             }
@@ -217,6 +240,7 @@ public class UserTableScript : MonoBehaviour {
             cat.SetActive(true);
 
             catObjects.Add(cat);
+            catNames.Add(catName);
         }
 
         guideAnimator.runtimeAnimatorController = idleAnimatorController;
@@ -228,90 +252,13 @@ public class UserTableScript : MonoBehaviour {
         Debug.Log("Hit: " + name);
 
         if (name.StartsWith("Cat") && !name.StartsWith("CatF") && !cats.Contains(name)) {
-            cats.Add(name);
-            if (points < numberOfCats) {
-                if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
-                    points++;
-                    GameObject pointText = Utility.FindChildFromParent(pointsCoop, "PointsCoopText");
-                    if (points == 1) {
-                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found " + points + " cat so far!";
-                    } else {
-                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found " + points + " cats so far!";
-                    }
-                } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
-                    var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
-
-                    int player = (int) hashtable[name + "Grab"];
-                    if (player == 1) {
-                        firstPlayerPoints++;
-                    } else {
-                        secondPlayerPoints++;
-                    }
-
-                    GameObject pointText = Utility.FindChildFromParent(pointsVs, "PointsVsText");
-                    if (firstPlayerPoints == 1 && secondPlayerPoints == 1) {
-                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cat so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cat so far!";
-                    } else if (firstPlayerPoints == 1) {
-                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cat so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cats so far!";
-                    } else if (secondPlayerPoints == 1) {
-                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cats so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cat so far!";
-                    } else {
-                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cats so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cats so far!";
-                    }
-                }
-            }
-
-            GameObject body = Utility.FindChildFromParent(collisionObject, "Cat.L");
-            Material bodyMaterial = body.GetComponent<Renderer>().material;
-
-            GameObject leftEye = Utility.FindChildFromParent(collisionObject, "Cat.L_Eye.L");
-            Material leftEyeMaterial = leftEye.GetComponent<Renderer>().material;
-
-            GameObject rightEye = Utility.FindChildFromParent(collisionObject, "Cat.L_Eye.R");
-            Material rightEyeMaterial = rightEye.GetComponent<Renderer>().material;
-
-            collisionObject.SetActive(false);
-
-            GameObject finalCatParent = GameObject.Find("CatsFinalPosition");
-            string finalCatName;
-            if (!PhotonNetwork.IsConnected|| PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
-                finalCatName = "CatFinal" + points;
-            } else {
-                finalCatName = "CatFinal" + (firstPlayerPoints + secondPlayerPoints);
-            }
-
-            GameObject finalCat = Utility.FindChildFromParent(finalCatParent, finalCatName);
-
-            GameObject finalBody = Utility.FindChildFromParent(finalCat, "Cat.L");
-            finalBody.GetComponent<Renderer>().material = bodyMaterial;
-
-            GameObject finalLeftEye = Utility.FindChildFromParent(finalCat, "Cat.L_Eye.L");
-            finalLeftEye.GetComponent<Renderer>().material = leftEyeMaterial;
-
-            GameObject finalRightEye = Utility.FindChildFromParent(finalCat, "Cat.L_Eye.R");
-            finalRightEye.GetComponent<Renderer>().material = rightEyeMaterial;
-
-            finalCat.transform.localScale = collisionObject.transform.localScale;
-
-            finalCat.SetActive(true);
-
-            catObjects.Remove(collisionObject);
-
-            if (PhotonNetwork.IsConnected) {
-                var hash = PhotonNetwork.CurrentRoom.CustomProperties;
-                hash.Remove(name);
-                hash.Remove(name + "Grab");
-                PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
-            }
-
-            if (!IsVictory()) {
-                guide.transform.rotation = guideRotation;
-                guideAnimator.runtimeAnimatorController = pointAnimatorController;
-                gotPoint = true;
-                pointTimer = 0;
-            }
+            CatCollision(collisionObject);
         }
 
+        CheckVictory();
+    }
+
+    private void CheckVictory() {
         if (points == numberOfCats) {
             guideAnimator.runtimeAnimatorController = victoryAnimatorController;
 
@@ -340,7 +287,7 @@ public class UserTableScript : MonoBehaviour {
             } else {
                 victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
             }
-        } else if (secondPlayerPoints > numberOfCats / 2) {
+        }  else if (secondPlayerPoints > numberOfCats / 2) {
             guideAnimator.runtimeAnimatorController = victoryAnimatorController;
 
             pointsVs.SetActive(false);
@@ -349,12 +296,14 @@ public class UserTableScript : MonoBehaviour {
             GameObject victoryText = Utility.FindChildFromParent(victoryVs, "VictoryVsText");
             if (firstPlayerPoints == 1) {
                 victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 2 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cat!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
-            } else if (secondPlayerPoints == 1) {
+            } else if (secondPlayerPoints == 1)
+            {
                 victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 2 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cat!";
-            } else {
+            }
+            else {
                 victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 2 found most of the cats!\n\nPlayer 1 has found " + firstPlayerPoints + " cats!\n\nPlayer 2 has found " + secondPlayerPoints + " cats!";
             }
-        } else if (firstPlayerPoints + secondPlayerPoints == numberOfCats) {
+        }  else if (firstPlayerPoints + secondPlayerPoints == numberOfCats) {
             guideAnimator.runtimeAnimatorController = victoryAnimatorController;
 
             pointsVs.SetActive(false);
@@ -371,7 +320,113 @@ public class UserTableScript : MonoBehaviour {
         if (PhotonNetwork.IsConnected) {
             Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
+    }
 
+    private void UpdatePoints() {
+        GameObject pointText = Utility.FindChildFromParent(pointsCoop, "PointsCoopText");
+        if (points == 1) {
+            pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found " + points + " cat so far!";
+        } else {
+            pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found " + points + " cats so far!";
+        }
+    }
+
+    private void UpdateBothPlayerPoints() {
+        GameObject pointText = Utility.FindChildFromParent(pointsVs, "PointsVsText");
+        if (firstPlayerPoints == 1 && secondPlayerPoints == 1) {
+            pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cat so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cat so far!";
+        } else if (firstPlayerPoints == 1) {
+            pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cat so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cats so far!";
+        } else if (secondPlayerPoints == 1) {
+            pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cats so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cat so far!";
+        } else {
+            pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cats so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cats so far!";
+        }
+    }
+
+    private void CatCollision(GameObject collisionObject) {
+        string name = collisionObject.name;
+        cats.Add(name);
+        if (points < numberOfCats && firstPlayerPoints + secondPlayerPoints < numberOfCats) {
+            if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                points++;
+                UpdatePoints();
+
+                if (PhotonNetwork.IsConnected) {
+                    var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
+                    hashtable.Remove("points");
+                    hashtable.Add("points", points);
+                    PhotonNetwork.CurrentRoom.SetCustomProperties(hashtable);
+                }
+            } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
+                var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
+
+                int player = (int)hashtable[name + "Grab"];
+                if (player == 1) {
+                    firstPlayerPoints++;
+                    hashtable.Remove("firstPlayerPoints");
+                    hashtable.Add("firstPlayerPoints", firstPlayerPoints);
+                } else {
+                    secondPlayerPoints++;
+                    hashtable.Remove("secondPlayerPoints");
+                    hashtable.Add("secondPlayerPoints", secondPlayerPoints);
+                }
+
+                UpdateBothPlayerPoints();
+                PhotonNetwork.CurrentRoom.SetCustomProperties(hashtable);
+            }
+        }
+
+        GameObject body = Utility.FindChildFromParent(collisionObject, "Cat.L");
+        Material bodyMaterial = body.GetComponent<Renderer>().material;
+
+        GameObject leftEye = Utility.FindChildFromParent(collisionObject, "Cat.L_Eye.L");
+        Material leftEyeMaterial = leftEye.GetComponent<Renderer>().material;
+
+        GameObject rightEye = Utility.FindChildFromParent(collisionObject, "Cat.L_Eye.R");
+        Material rightEyeMaterial = rightEye.GetComponent<Renderer>().material;
+
+        collisionObject.SetActive(false);
+
+        GameObject finalCatParent = GameObject.Find("CatsFinalPosition");
+        string finalCatName;
+        if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+            finalCatName = "CatFinal" + points;
+        } else {
+            finalCatName = "CatFinal" + (firstPlayerPoints + secondPlayerPoints);
+        }
+
+        GameObject finalCat = Utility.FindChildFromParent(finalCatParent, finalCatName);
+
+        GameObject finalBody = Utility.FindChildFromParent(finalCat, "Cat.L");
+        finalBody.GetComponent<Renderer>().material = bodyMaterial;
+
+        GameObject finalLeftEye = Utility.FindChildFromParent(finalCat, "Cat.L_Eye.L");
+        finalLeftEye.GetComponent<Renderer>().material = leftEyeMaterial;
+
+        GameObject finalRightEye = Utility.FindChildFromParent(finalCat, "Cat.L_Eye.R");
+        finalRightEye.GetComponent<Renderer>().material = rightEyeMaterial;
+
+        finalCat.transform.localScale = collisionObject.transform.localScale;
+
+        finalCat.SetActive(true);
+
+        catObjects.Remove(collisionObject);
+
+        if (PhotonNetwork.IsConnected) {
+            var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+            catNames.Remove(name);
+            hash.Remove(name);
+            hash.Remove(name + "Grab");
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+        }
+
+        if (!IsVictory()) {
+            guide.transform.rotation = guideRotation;
+            guideAnimator.runtimeAnimatorController = pointAnimatorController;
+            gotPoint = true;
+            pointTimer = 0;
+        }
     }
 
     public void BackToMainMenu() {
