@@ -93,10 +93,6 @@ public class UserTableScript : MonoBehaviour {
             return;
         }
 
-        //if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == 0) {
-        //    GuideInit();
-        //}
-
         if (multiplayerInit && PhotonNetwork.CurrentRoom != null) {
             Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
             if (PhotonNetwork.CurrentRoom.Name.Equals("Coop") && hash.Count == 0) {
@@ -116,9 +112,7 @@ public class UserTableScript : MonoBehaviour {
                 hash.Add("firstPlayer", "ready");
             } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
                 welcomeVs.SetActive(false);
-                Debug.Log("Bye");
                 pointsVs.SetActive(true);
-                Debug.Log("Bye2");
                 InitializeCats();
                 gameStarted = true;
                 hash.Remove("firstPlayer");
@@ -145,12 +139,6 @@ public class UserTableScript : MonoBehaviour {
             hash.Remove("secondPlayer");
             PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
         }
-
-        //if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == numberOfCats) {
-           //SecondPlayerInit();
-            //Debug.Log("8 cats!");
-            //gameStarted = true;
-        //}
     }
 
     public void SingleplayerInit() {
@@ -241,6 +229,12 @@ public class UserTableScript : MonoBehaviour {
             if (points < numberOfCats) {
                 if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                     points++;
+                    GameObject pointText = Utility.FindChildFromParent(pointsCoop, "PointsCoopText");
+                    if (points == 1) {
+                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found " + points + " cat so far!";
+                    } else {
+                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found " + points + " cats so far!";
+                    }
                 } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
                     var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
 
@@ -250,8 +244,17 @@ public class UserTableScript : MonoBehaviour {
                     } else {
                         secondPlayerPoints++;
                     }
-                    Debug.Log("First player points: " + firstPlayerPoints);
-                    Debug.Log("Second player points: " + secondPlayerPoints);
+
+                    GameObject pointText = Utility.FindChildFromParent(pointsVs, "PointsVsText");
+                    if (firstPlayerPoints == 1 && secondPlayerPoints == 1) {
+                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cat so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cat so far!";
+                    } else if (firstPlayerPoints == 1) {
+                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cat so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cats so far!";
+                    } else if (secondPlayerPoints == 1) {
+                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cats so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cat so far!";
+                    } else {
+                        pointText.GetComponent<TMPro.TextMeshProUGUI>().text = "Player 1 has found " + firstPlayerPoints + " cats so far!\n\nPlayer 2 has found " + secondPlayerPoints + " cats so far!";
+                    }
                 }
             }
 
@@ -273,11 +276,9 @@ public class UserTableScript : MonoBehaviour {
             } else {
                 finalCatName = "CatFinal" + (firstPlayerPoints + secondPlayerPoints);
             }
-            Debug.Log(finalCatName);
 
             GameObject finalCat = Utility.FindChildFromParent(finalCatParent, finalCatName);
 
-            Debug.Log(finalCat);
             GameObject finalBody = Utility.FindChildFromParent(finalCat, "Cat.L");
             finalBody.GetComponent<Renderer>().material = bodyMaterial;
 
