@@ -133,6 +133,14 @@ public class UserTableScript : MonoBehaviour {
             ShowCatsForOtherPlayer();
             gameStarted = true;
 
+            waiting.SetActive(false);
+
+            if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+                pointsCoop.SetActive(true);
+            } else {
+                pointsVs.SetActive(false);
+            }
+
             Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
             hash.Remove("secondPlayer");
             PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
