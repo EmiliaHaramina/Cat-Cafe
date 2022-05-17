@@ -13,12 +13,7 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         base.OnJoinedRoom();
 
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
-            // If a player rejoins later, is this needed?
-            //if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("HashCat1")) {
-                //Debug.Log("HashCat1 already exists!");
-                //return;
-            //}
-            userTable.GetComponent<UserTableScript>().InitializeCats();
+            userTable.GetComponent<UserTableScript>().GuideInit();
             Debug.Log("Initialized cats because both players joined.");
         } else {
             Debug.Log("You are the first player to join.");
@@ -29,8 +24,8 @@ public class CatCafeNetworkManager : MonoBehaviourPunCallbacks {
         Debug.Log("A new player joined the room.");
         base.OnPlayerEnteredRoom(newPlayer);
 
+        userTable.GetComponent<UserTableScript>().GuideInit();
         if (PhotonNetwork.CurrentRoom.PlayerCount == 2) {
-
             Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
     }

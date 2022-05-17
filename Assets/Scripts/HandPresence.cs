@@ -16,13 +16,11 @@ public class HandPresence : MonoBehaviour
     private Animator handAnimator;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         TryInitialize();
     }
 
-    void TryInitialize()
-    {
+    void TryInitialize() {
         List<InputDevice> devices = new List<InputDevice>();
 
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
@@ -50,8 +48,7 @@ public class HandPresence : MonoBehaviour
         }
     }
 
-    void UpdateHandAnimation()
-    {
+    void UpdateHandAnimation() {
         if(targetDevice.TryGetFeatureValue(CommonUsages.trigger, out float triggerValue))
         {
             handAnimator.SetFloat("Trigger", triggerValue);
@@ -72,8 +69,7 @@ public class HandPresence : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         if(!targetDevice.isValid)
         {
             TryInitialize();

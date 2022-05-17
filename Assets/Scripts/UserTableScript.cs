@@ -67,8 +67,9 @@ public class UserTableScript : MonoBehaviour {
         guideAnimator.runtimeAnimatorController = talkingAnimatorController;
 
         if (!PhotonNetwork.IsConnected) {
-            InitializeCats();
-            gameStarted = true;
+            GuideInit();
+            //InitializeCats();
+            //gameStarted = true;
         }
     }
 
@@ -76,8 +77,6 @@ public class UserTableScript : MonoBehaviour {
 
         if (gotPoint) {
             pointTimer += Time.deltaTime;
-            Debug.Log("Point timer: " + pointTimer);
-            Debug.Log("Time for point: " + timeForPoint);
 
             if (pointTimer >= timeForPoint) {
                 gotPoint = false;
@@ -98,10 +97,32 @@ public class UserTableScript : MonoBehaviour {
         }
 
         if (PhotonNetwork.CurrentRoom != null && PhotonNetwork.CurrentRoom.CustomProperties.Count == numberOfCats) {
-            ShowCatsForOtherPlayer();
+            SecondPlayerInit();
             Debug.Log("8 cats!");
             gameStarted = true;
         }
+    }
+
+    public void FirstPlayerInit() {
+        GuideInit();
+
+        //InitializeCats();
+    }
+
+    public void SecondPlayerInit() {
+        GuideInit();
+
+        //ShowCatsForOtherPlayer();
+    }
+
+    public void GuideInit() {
+        if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+            welcomeCoop.SetActive(true);
+        } else {
+            welcomeVs.SetActive(true);
+        }
+
+        guideAnimator.runtimeAnimatorController = talkingAnimatorController;
     }
 
     public void InitializeCats() {
@@ -116,19 +137,16 @@ public class UserTableScript : MonoBehaviour {
 
         while (randomNumbers.Count < numberOfCats) {
             int rInt = r.Next(1, rangeOfCats);
-            Debug.Log(rInt);
 
             if (!randomNumbers.Contains(rInt))
             {
                 randomNumbers.Add(rInt);
 
                 string catName = "Cat" + rInt;
-                Debug.Log(catName);
                 GameObject cat = Utility.FindChildFromParent(catParent, catName);
                 cat.SetActive(true);
 
                 catObjects.Add(cat);
-                GameVariables.AddCat(cat);
                 if (PhotonNetwork.IsConnected) {
                     hash.Add(catName, "HashCat" + catObjects.Count);
                 }
@@ -153,7 +171,6 @@ public class UserTableScript : MonoBehaviour {
             cat.SetActive(true);
 
             catObjects.Add(cat);
-            GameVariables.AddCat(cat);
         }
 
         guideAnimator.runtimeAnimatorController = idleAnimatorController;
@@ -173,7 +190,6 @@ public class UserTableScript : MonoBehaviour {
                     var hashtable = PhotonNetwork.CurrentRoom.CustomProperties;
 
                     int player = (int) hashtable[name + "Grab"];
-                    Debug.Log(player);
                     if (player == 1) {
                         firstPlayerPoints++;
                     } else {
@@ -221,7 +237,6 @@ public class UserTableScript : MonoBehaviour {
             finalCat.SetActive(true);
 
             catObjects.Remove(collisionObject);
-            GameVariables.RemoveCat(collisionObject);
 
             if (PhotonNetwork.IsConnected) {
                 var hash = PhotonNetwork.CurrentRoom.CustomProperties;
