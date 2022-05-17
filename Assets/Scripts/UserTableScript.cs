@@ -6,6 +6,7 @@ using Random = System.Random;
 using Photon.Pun;
 using Photon.Realtime;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using UnityEngine.SceneManagement;
 
 public class UserTableScript : MonoBehaviour {
 
@@ -371,6 +372,11 @@ public class UserTableScript : MonoBehaviour {
             Debug.Log(PhotonNetwork.CurrentRoom.ToStringFull());
         }
 
+    }
+
+    public void BackToMainMenu() {
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene("Start Menu");
     }
 
 }
