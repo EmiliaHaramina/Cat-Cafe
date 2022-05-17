@@ -99,7 +99,6 @@ public class UserTableScript : MonoBehaviour {
 
         if (multiplayerInit && PhotonNetwork.CurrentRoom != null) {
             Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
-            Debug.Log("Before: " + hash);
             if (PhotonNetwork.CurrentRoom.Name.Equals("Coop") && hash.Count == 0) {
                 welcomeCoop.SetActive(false);
                 waiting.SetActive(true);
@@ -117,7 +116,9 @@ public class UserTableScript : MonoBehaviour {
                 hash.Add("firstPlayer", "ready");
             } else if (PhotonNetwork.CurrentRoom.Name.Equals("Vs")) {
                 welcomeVs.SetActive(false);
+                Debug.Log("Bye");
                 pointsVs.SetActive(true);
+                Debug.Log("Bye2");
                 InitializeCats();
                 gameStarted = true;
                 hash.Remove("firstPlayer");
@@ -125,7 +126,6 @@ public class UserTableScript : MonoBehaviour {
             }
 
             multiplayerInit = false;
-            Debug.Log("After: " + hash);
             PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
         }
 
@@ -138,7 +138,7 @@ public class UserTableScript : MonoBehaviour {
             if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
                 pointsCoop.SetActive(true);
             } else {
-                pointsVs.SetActive(false);
+                pointsVs.SetActive(true);
             }
 
             Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
