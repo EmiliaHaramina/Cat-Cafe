@@ -33,6 +33,7 @@ public class UserTableScript : MonoBehaviour {
     private bool gotPoint = false;
     private double pointTimer = 0;
 
+    public GameObject welcomeSingleplayer;
     public GameObject welcomeCoop;
     public GameObject welcomeVs;
     public GameObject pointsCoop;
@@ -115,7 +116,9 @@ public class UserTableScript : MonoBehaviour {
     }
 
     public void GuideInit() {
-        if (!PhotonNetwork.IsConnected || PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
+        if (!PhotonNetwork.IsConnected) {
+            welcomeSingleplayer.SetActive(true);
+        } else if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
             welcomeCoop.SetActive(true);
         } else {
             welcomeVs.SetActive(true);
