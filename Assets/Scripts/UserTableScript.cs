@@ -94,10 +94,14 @@ public class UserTableScript : MonoBehaviour {
 
         guide.transform.position = guidePosition;
 
+        if (PhotonNetwork.CurrentRoom != null) {
+            Debug.Log(PhotonNetwork.CurrentRoom);
+        }
+
         if (PhotonNetwork.CurrentRoom != null
-            && ((PhotonNetwork.CurrentRoom.Name.Equals("coop") && points != (int) PhotonNetwork.CurrentRoom.CustomProperties["points"])
-            || PhotonNetwork.CurrentRoom.Name.Equals("Vs") && (firstPlayerPoints != (int) PhotonNetwork.CurrentRoom.CustomProperties["firstPlayerPoints"]
-            || secondPlayerPoints != (int) PhotonNetwork.CurrentRoom.CustomProperties["secondPlayerPoints"]))) {
+            && ((PhotonNetwork.CurrentRoom.Name.Equals("coop") && PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("points") && points != (int) PhotonNetwork.CurrentRoom.CustomProperties["points"])
+            || PhotonNetwork.CurrentRoom.Name.Equals("Vs") && PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("firstplayerPoints") && PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("secondPlayerPoints")
+            && (firstPlayerPoints != (int) PhotonNetwork.CurrentRoom.CustomProperties["firstPlayerPoints"] || secondPlayerPoints != (int) PhotonNetwork.CurrentRoom.CustomProperties["secondPlayerPoints"]))) {
             Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
 
             foreach (String catName in catNames) {
