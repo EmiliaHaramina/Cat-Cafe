@@ -250,7 +250,6 @@ public class UserTableScript : MonoBehaviour {
     void OnCollisionEnter(Collision collision) {
         GameObject collisionObject = collision.gameObject;
         string name = collisionObject.name;
-        Debug.Log("Hit: " + name);
 
         if (name.StartsWith("Cat") && !name.StartsWith("CatF") && !cats.Contains(name)) {
             Debug.Log("In collision: " + name);
@@ -379,6 +378,14 @@ public class UserTableScript : MonoBehaviour {
             }
         }
 
+        if (PhotonNetwork.IsConnected) {
+            var hash = PhotonNetwork.CurrentRoom.CustomProperties;
+            catNames.Remove(name);
+            hash.Remove(name);
+            hash.Remove(name + "Grab");
+            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
+        }
+
         GameObject body = Utility.FindChildFromParent(collisionObject, "Cat.L");
         Material bodyMaterial = body.GetComponent<Renderer>().material;
 
@@ -414,14 +421,6 @@ public class UserTableScript : MonoBehaviour {
         finalCat.SetActive(true);
 
         catObjects.Remove(collisionObject);
-
-        if (PhotonNetwork.IsConnected) {
-            var hash = PhotonNetwork.CurrentRoom.CustomProperties;
-            catNames.Remove(name);
-            hash.Remove(name);
-            hash.Remove(name + "Grab");
-            PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
-        }
 
         if (!IsVictory()) {
             guide.transform.rotation = guideRotation;
