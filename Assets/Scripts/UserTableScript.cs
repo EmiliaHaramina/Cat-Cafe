@@ -53,7 +53,7 @@ public class UserTableScript : MonoBehaviour {
 
     public bool IsVictory() {
         return points == numberOfCats || firstPlayerPoints > numberOfCats / 2 || secondPlayerPoints > numberOfCats / 2;
-     }
+    }
 
     public int GetPoints() {
         return points + firstPlayerPoints + secondPlayerPoints;
@@ -94,12 +94,16 @@ public class UserTableScript : MonoBehaviour {
 
         guide.transform.position = guidePosition;
 
-        if (PhotonNetwork.CurrentRoom != null) {
+        if (PhotonNetwork.CurrentRoom != null
+            && ((PhotonNetwork.CurrentRoom.Name.Equals("coop") && points != (int) PhotonNetwork.CurrentRoom.CustomProperties["points"])
+            || PhotonNetwork.CurrentRoom.Name.Equals("Vs") && (firstPlayerPoints != (int) PhotonNetwork.CurrentRoom.CustomProperties["firstPlayerPoints"]
+            || secondPlayerPoints != (int) PhotonNetwork.CurrentRoom.CustomProperties["secondPlayerPoints"]))) {
             Hashtable hash = PhotonNetwork.CurrentRoom.CustomProperties;
 
             foreach (String catName in catNames) {
                 if (!hash.ContainsKey(catName)) {
                     Debug.Log("In update: " + catName);
+                    Debug.Log("Points on player: " + points + ", points on network: " + PhotonNetwork.CurrentRoom.CustomProperties["points"]);
                     GameObject cats = GameObject.Find("Cats");
                     CatCollision(Utility.FindChildFromParent(cats, catName));
                     if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
