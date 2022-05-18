@@ -99,6 +99,7 @@ public class UserTableScript : MonoBehaviour {
 
             foreach (String catName in catNames) {
                 if (!hash.ContainsKey(catName)) {
+                    Debug.Log("In update: " + catName);
                     GameObject cats = GameObject.Find("Cats");
                     CatCollision(Utility.FindChildFromParent(cats, catName));
                     if (PhotonNetwork.CurrentRoom.Name.Equals("Coop")) {
@@ -252,6 +253,7 @@ public class UserTableScript : MonoBehaviour {
         Debug.Log("Hit: " + name);
 
         if (name.StartsWith("Cat") && !name.StartsWith("CatF") && !cats.Contains(name)) {
+            Debug.Log("In collision: " + name);
             CatCollision(collisionObject);
         }
 
