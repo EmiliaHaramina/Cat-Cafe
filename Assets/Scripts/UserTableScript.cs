@@ -308,11 +308,11 @@ public class UserTableScript : MonoBehaviour {
             if (firstPlayerPoints == 1 && PhotonNetwork.LocalPlayer.ActorNumber == 2) {
                 victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found most of the cats!\n\nYou have found " + secondPlayerPoints + " cats!\n\nThe other player found " + firstPlayerPoints + " cat!";
             } else if (firstPlayerPoints == 1) {
-                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "The other player found most of the cats!\n\nYou have found " + firstPlayerPoints + " cats!\n\nThe other player found " + secondPlayerPoints + " cat!";
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "The other player found most of the cats!\n\nYou have found " + firstPlayerPoints + " cat!\n\nThe other player found " + secondPlayerPoints + " cats!";
             } else if (secondPlayerPoints == 1 && PhotonNetwork.LocalPlayer.ActorNumber == 2) {
-                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found most of the cats!\n\nYou have found " + secondPlayerPoints + " cats!\n\nThe other player has found " + firstPlayerPoints + " cat!";
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found most of the cats!\n\nYou have found " + secondPlayerPoints + " cat!\n\nThe other player has found " + firstPlayerPoints + " cats!";
             } else if (secondPlayerPoints == 1) {
-                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "The other player has found most of the cats!\n\nYou have found " + firstPlayerPoints + " cat!\n\nThe other player has found " + secondPlayerPoints + " cats!";
+                victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "The other player has found most of the cats!\n\nYou have found " + firstPlayerPoints + " cats!\n\nThe other player has found " + secondPlayerPoints + " cat!";
             } else if (PhotonNetwork.LocalPlayer.ActorNumber == 2) {
                 victoryText.GetComponent<TMPro.TextMeshProUGUI>().text = "You have found most of the cats!\n\nYou have found " + secondPlayerPoints + " cats!\n\nThe other player found " + firstPlayerPoints + " cats!";
             } else {
